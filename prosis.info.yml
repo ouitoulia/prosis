@@ -1,0 +1,11 @@
+name: "Prósis"
+description: "Prósis - Vista (Prospetto) è un modulo drupal che gestisce le viste e i blocchi usate per presentare i contenuti dell'architettura  dell'informazione delle scuole."
+package: "Ouitoulía"
+
+type: module
+core_version_requirement: ^10
+dependencies:
+  - drupal:views
+  - ouitoulia:themethla
+  - ouitoulia:prosopon
+

@@ -1,0 +1,32 @@
+langcode: it
+status: true
+dependencies:
+  config:
+    - views.view.correlati_luogo
+  module:
+    - node
+    - views
+  theme:
+    - skenografia
+id: skenografia_views_block__correlati_luogo_contenuti_correlati
+theme: skenografia
+region: after_content_first
+weight: 0
+provider: null
+plugin: 'views_block:correlati_luogo-contenuti_correlati'
+settings:
+  id: 'views_block:correlati_luogo-contenuti_correlati'
+  label: ''
+  label_display: visible
+  provider: views
+  context_mapping: {  }
+  views_label: ''
+  items_per_page: none
+visibility:
+  'entity_bundle:node':
+    id: 'entity_bundle:node'
+    negate: false
+    context_mapping:
+      node: '@node.node_route_context:node'
+    bundles:
+      luogo: luogo
