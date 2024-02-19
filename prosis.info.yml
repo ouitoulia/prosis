@@ -10,7 +10,7 @@ dependencies:
   - ouitoulia:prosopon
 
 # Information added by GitHub Action packaging script on 2024-02-19
-version: '1.2.4 '
+version: '1.2.5'
 project: 'Prosis'
-datestamp: 1708329962
-message: ' fix display block correlati persona when empty'
+datestamp: 1708379448
+message: ' aggiunti percorsi di studio correlati alle strutture organizzative'
