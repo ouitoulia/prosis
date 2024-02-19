@@ -503,6 +503,7 @@ display:
       display_description: 'Visualizza i contenuti correllati di tipo Notizia ed Evento.'
       header: {  }
       display_extenders: {  }
+      block_hide_empty: true
     cache_metadata:
       max-age: -1
       contexts:
