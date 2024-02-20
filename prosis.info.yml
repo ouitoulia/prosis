@@ -9,8 +9,8 @@ dependencies:
   - ouitoulia:themethla
   - ouitoulia:prosopon
 
-# Information added by GitHub Action packaging script on 2024-02-19
-version: '1.2.5'
+# Information added by GitHub Action packaging script on 2024-02-20
+version: '1.2.6'
 project: 'Prosis'
-datestamp: 1708379448
-message: ' aggiunti percorsi di studio correlati alle strutture organizzative'
+datestamp: 1708419092
+message: ' review ct luogo'
