@@ -614,7 +614,7 @@ display:
           plugin_id: text
           empty: false
           content:
-            value: '<h3 class="h6 mb-0">Le persone che gestiscono il luogo</h3>'
+            value: '<h3 class="h5 fw-lighter mb-0">Le persone che gestiscono il luogo</h3>'
             format: bootstrap_italia_2
           tokenize: false
       display_extenders: {  }
@@ -839,7 +839,7 @@ display:
           plugin_id: text
           empty: false
           content:
-            value: '<h3 class="h6 mb-0">Strutture che gestiscono il luogo</h3>'
+            value: '<h3 class="h5 fw-lighter mb-0">Strutture che gestiscono il luogo</h3>'
             format: bootstrap_italia_2
           tokenize: false
       display_extenders: {  }
