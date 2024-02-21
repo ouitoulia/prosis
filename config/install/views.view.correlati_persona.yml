@@ -1,4 +1,3 @@
-uuid: 703fced9-089c-4687-a68d-fc9d4fc6c9b0
 langcode: it
 status: true
 dependencies:
@@ -456,8 +455,8 @@ display:
           label: ''
           exclude: true
           alter:
-            alter_text: false
-            text: ''
+            alter_text: true
+            text: 'Luogo: {{ field_luoghi }}'
             make_link: false
             path: ''
             absolute: false
