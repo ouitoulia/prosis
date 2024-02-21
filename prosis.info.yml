@@ -9,8 +9,8 @@ dependencies:
   - ouitoulia:themethla
   - ouitoulia:prosopon
 
-# Information added by GitHub Action packaging script on 2024-02-20
-version: '1.3.2'
+# Information added by GitHub Action packaging script on 2024-02-21
+version: '1.3.3'
 project: 'Prosis'
-datestamp: 1708448185
-message: ' fix add evento ct to correlati'
+datestamp: 1708508324
+message: ' update view correlati persona dove lavora, fix duplicated row'
