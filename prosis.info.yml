@@ -9,8 +9,8 @@ dependencies:
   - ouitoulia:themethla
   - ouitoulia:prosopon
 
-# Information added by GitHub Action packaging script on 2024-02-21
-version: '1.3.4'
+# Information added by GitHub Action packaging script on 2024-02-22
+version: '1.4.0'
 project: 'Prosis'
-datestamp: 1708509792
-message: ' remove uuid from view'
+datestamp: 1708608420
+message: ' add correlati_percorso_di_studio view'
