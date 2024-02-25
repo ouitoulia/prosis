@@ -10,7 +10,7 @@ dependencies:
   - ouitoulia:prosopon
 
 # Information added by GitHub Action packaging script on 2024-02-25
-version: '1.4.3'
+version: '1.4.4'
 project: 'Prosis'
-datestamp: 1708875319
-message: ' documenti correlati ai servizi, fix percorso di studio pager'
+datestamp: 1708875796
+message: ' fix mismatch closing tag in view header'
