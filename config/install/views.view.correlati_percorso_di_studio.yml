@@ -457,7 +457,7 @@ display:
           expose:
             items_per_page: false
             items_per_page_label: 'Voci per pagina'
-            items_per_page_options: '5, 10, 25, 50'
+            items_per_page_options: '2,4,8,16'
             items_per_page_options_all: false
             items_per_page_options_all_label: '- Tutto -'
             offset: false
@@ -622,6 +622,26 @@ display:
     display_plugin: block
     position: 1
     display_options:
+      pager:
+        type: mini
+        options:
+          offset: 0
+          items_per_page: 10
+          total_pages: null
+          id: 0
+          tags:
+            next: 'Next ›'
+            previous: '‹ Precedente'
+          expose:
+            items_per_page: false
+            items_per_page_label: 'Voci per pagina'
+            items_per_page_options: '5, 10, 25, 50'
+            items_per_page_options_all: false
+            items_per_page_options_all_label: '- Tutto -'
+            offset: false
+            offset_label: Scostamento
+      defaults:
+        pager: false
       display_description: "Attraverso il campo field_percorso_di_studio viene recuperato l'orario delle classi."
       display_extenders: {  }
     cache_metadata:
