@@ -410,7 +410,7 @@ display:
           plugin_id: text
           empty: false
           content:
-            value: '<h2 class="h4 mb-1 mt-3">Documenti</h3>'
+            value: '<h2 class="h4 mb-1 mt-3">Documenti</h2>'
             format: bootstrap_italia_2
           tokenize: false
       display_extenders: {  }
