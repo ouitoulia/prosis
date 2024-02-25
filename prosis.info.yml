@@ -10,7 +10,7 @@ dependencies:
   - ouitoulia:prosopon
 
 # Information added by GitHub Action packaging script on 2024-02-25
-version: '1.4.1'
+version: '1.4.2'
 project: 'Prosis'
-datestamp: 1708853370
-message: ' add correlati_percorso_di_studio documenti'
+datestamp: 1708873102
+message: ' add percorso_di_studio correlati block'
