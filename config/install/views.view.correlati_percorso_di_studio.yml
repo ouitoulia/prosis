@@ -2,10 +2,13 @@ langcode: it
 status: true
 dependencies:
   config:
+    - core.entity_view_mode.node.card
     - core.entity_view_mode.node.teaser
     - node.type.classe
     - node.type.documento
+    - node.type.percorso_di_studio
   module:
+    - bootstrap_italia_views_carousel
     - datetime
     - node
     - user
@@ -295,6 +298,142 @@ display:
         - 'languages:language_interface'
         - url
         - url.query_args
+        - 'user.node_grants:view'
+        - user.permissions
+      tags: {  }
+  correlati:
+    id: correlati
+    display_title: 'Correlati Percorso di studio'
+    display_plugin: block
+    position: 3
+    display_options:
+      title: 'Percorsi di studio correlati'
+      pager:
+        type: some
+        options:
+          offset: 0
+          items_per_page: 24
+      sorts:
+        field_struttura_didattica_target_id:
+          id: field_struttura_didattica_target_id
+          table: node__field_struttura_didattica
+          field: field_struttura_didattica_target_id
+          relationship: none
+          group_type: group
+          admin_label: ''
+          plugin_id: standard
+          order: ASC
+          expose:
+            label: ''
+            field_identifier: ''
+          exposed: false
+        created:
+          id: created
+          table: node_field_data
+          field: created
+          relationship: none
+          group_type: group
+          admin_label: ''
+          entity_type: node
+          entity_field: created
+          plugin_id: date
+          order: DESC
+          expose:
+            label: ''
+            field_identifier: ''
+          exposed: false
+          granularity: second
+      arguments: {  }
+      filters:
+        status:
+          id: status
+          table: node_field_data
+          field: status
+          entity_type: node
+          entity_field: status
+          plugin_id: boolean
+          value: '1'
+          group: 1
+          expose:
+            operator: ''
+        type:
+          id: type
+          table: node_field_data
+          field: type
+          relationship: none
+          group_type: group
+          admin_label: ''
+          entity_type: node
+          entity_field: type
+          plugin_id: bundle
+          operator: in
+          value:
+            percorso_di_studio: percorso_di_studio
+          group: 1
+          exposed: false
+          expose:
+            operator_id: ''
+            label: ''
+            description: ''
+            use_operator: false
+            operator: ''
+            operator_limit_selection: false
+            operator_list: {  }
+            identifier: ''
+            required: false
+            remember: false
+            multiple: false
+            remember_roles:
+              authenticated: authenticated
+            reduce: false
+          is_grouped: false
+          group_info:
+            label: ''
+            description: ''
+            identifier: ''
+            optional: true
+            widget: select
+            multiple: false
+            remember: false
+            default_group: All
+            default_group_multiple: {  }
+            group_items: {  }
+      filter_groups:
+        operator: AND
+        groups:
+          1: AND
+      style:
+        type: bootstrap_italia_views_carousel_style
+        options:
+          uses_fields: false
+          bi_carousel_settings:
+            carousel_col_type: it-carousel-landscape-abstract-three-cols
+            slide_spacing: slide_track_padding
+            carousel_image_type: ''
+      row:
+        type: 'entity:node'
+        options:
+          relationship: none
+          view_mode: card
+      defaults:
+        title: false
+        pager: false
+        style: false
+        row: false
+        sorts: false
+        arguments: false
+        filters: false
+        filter_groups: false
+        header: false
+      display_description: 'Percorso di stuio correlati dallo stesso grado di istruzione'
+      header: {  }
+      display_extenders: {  }
+      block_hide_empty: true
+    cache_metadata:
+      max-age: -1
+      contexts:
+        - 'languages:language_content'
+        - 'languages:language_interface'
         - 'user.node_grants:view'
         - user.permissions
       tags: {  }

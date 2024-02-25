@@ -1,0 +1,31 @@
+langcode: it
+status: true
+dependencies:
+  config:
+    - views.view.correlati_percorso_di_studio
+  module:
+    - node
+    - views
+  theme:
+    - skenografia
+id: skenografia_views_block__correlati_percorso_di_studio_correlati
+theme: skenografia
+region: after_content_first
+weight: 0
+provider: null
+plugin: 'views_block:correlati_percorso_di_studio-correlati'
+settings:
+  id: 'views_block:correlati_percorso_di_studio-correlati'
+  label: ''
+  label_display: visible
+  provider: views
+  views_label: ''
+  items_per_page: none
+visibility:
+  'entity_bundle:node':
+    id: 'entity_bundle:node'
+    negate: false
+    context_mapping:
+      node: '@node.node_route_context:node'
+    bundles:
+      percorso_di_studio: percorso_di_studio
