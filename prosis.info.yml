@@ -10,7 +10,7 @@ dependencies:
   - ouitoulia:prosopon
 
 # Information added by GitHub Action packaging script on 2024-02-25
-version: '1.4.5'
+version: '1.4.6'
 project: 'Prosis'
-datestamp: 1708876497
-message: ' add documenti correlati to persona'
+datestamp: 1708876672
+message: ' fix data_oblio filter'
