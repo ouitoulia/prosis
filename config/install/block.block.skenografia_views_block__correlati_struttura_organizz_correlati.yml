@@ -1,0 +1,31 @@
+langcode: it
+status: true
+dependencies:
+  config:
+    - views.view.correlati_struttura_organizzativa
+  module:
+    - node
+    - views
+  theme:
+    - skenografia
+id: skenografia_views_block__correlati_struttura_organizz_correlati
+theme: skenografia
+region: after_content_first
+weight: 0
+provider: null
+plugin: 'views_block:correlati_struttura_organizzativa-correlati'
+settings:
+  id: 'views_block:correlati_struttura_organizzativa-correlati'
+  label: ''
+  label_display: visible
+  provider: views
+  views_label: ''
+  items_per_page: none
+visibility:
+  'entity_bundle:node':
+    id: 'entity_bundle:node'
+    negate: false
+    context_mapping:
+      node: '@node.node_route_context:node'
+    bundles:
+      struttura_organizzativa: struttura_organizzativa
