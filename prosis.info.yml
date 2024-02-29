@@ -9,8 +9,8 @@ dependencies:
   - ouitoulia:themethla
   - ouitoulia:prosopon
 
-# Information added by GitHub Action packaging script on 2024-02-28
-version: '1.8.0'
+# Information added by GitHub Action packaging script on 2024-02-29
+version: '1.9.0'
 project: 'Prosis'
-datestamp: 1709156971
-message: ' add correlati documento'
+datestamp: 1709203054
+message: ' add correlati struttura_organizzativa'
