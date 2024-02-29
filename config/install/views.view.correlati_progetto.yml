@@ -16,7 +16,7 @@ dependencies:
 id: correlati_progetto
 label: 'Correlati Progetto'
 module: views
-description: 'Visualizza i contenuti correlati con il content type Progetto'
+description: 'Visualizza i contenuti correlati con il tipo di contenuto Progetto'
 tag: ''
 base_table: node_field_data
 base_field: nid

@@ -15,7 +15,7 @@ dependencies:
 id: correlati_percorso_di_studio
 label: 'Correlati Percorso di studio'
 module: views
-description: 'Visualizza i contenuti correlati con il Content Type Percorso di studio'
+description: 'Visualizza i contenuti correlati con il tipo di contenuto Percorso di studio'
 tag: ''
 base_table: node_field_data
 base_field: nid

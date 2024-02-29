@@ -17,7 +17,7 @@ dependencies:
 id: correlati_luogo
 label: 'Correlati Luogo'
 module: views
-description: 'Visualizza i contenuti correlati con il Content Type Luogo'
+description: 'Visualizza i contenuti correlati con il tipo di contenuto Luogo'
 tag: ''
 base_table: node_field_data
 base_field: nid

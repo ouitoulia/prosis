@@ -18,7 +18,7 @@ dependencies:
 id: correlati_servizio
 label: 'Correlati servizio'
 module: views
-description: 'Visualizza i contenuti correlati con il Content Type Servizio'
+description: 'Visualizza i contenuti correlati con il tipo di contenuto Servizio'
 tag: ''
 base_table: node_field_data
 base_field: nid

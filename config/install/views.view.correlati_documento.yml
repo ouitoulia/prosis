@@ -12,7 +12,7 @@ dependencies:
 id: correlati_documento
 label: 'Correlati Documento'
 module: views
-description: 'Visualizza i contenuti correlati con il content type Documento'
+description: 'Visualizza i contenuti correlati con il tipo di contenuto Documento'
 tag: ''
 base_table: node_field_data
 base_field: nid

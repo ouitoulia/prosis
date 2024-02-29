@@ -19,7 +19,7 @@ dependencies:
 id: correlati_evento
 label: 'Correlati Evento'
 module: views
-description: 'Visualizza i contenuti correlati con il content type Evento'
+description: 'Visualizza i contenuti correlati con il tipo di contenuto Evento'
 tag: ''
 base_table: node_field_data
 base_field: nid

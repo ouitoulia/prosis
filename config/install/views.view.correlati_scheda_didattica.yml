@@ -12,7 +12,7 @@ dependencies:
 id: correlati_scheda_didattica
 label: 'Correlati Scheda didattica'
 module: views
-description: 'Visualizza i contenuti correlati con il content type Scheda didattica'
+description: 'Visualizza i contenuti correlati con il tipo di contenuto Scheda didattica'
 tag: ''
 base_table: node_field_data
 base_field: nid
