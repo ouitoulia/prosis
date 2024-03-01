@@ -1,0 +1,30 @@
+langcode: it
+status: true
+dependencies:
+  config:
+    - system.menu.main
+  module:
+    - menu_block
+  theme:
+    - skenografia
+id: skenografia_menu_block_footer_scuola
+theme: skenografia
+region: footer_second
+weight: 0
+provider: null
+plugin: 'menu_block:main'
+settings:
+  id: 'menu_block:main'
+  label: Scuola
+  label_display: visible
+  provider: menu_block
+  follow: false
+  follow_parent: child
+  label_link: false
+  label_type: fixed
+  level: 1
+  depth: 1
+  expand_all_items: false
+  parent: 'main:menu_link_content:2043ed8b-40ee-4437-8e5d-f6b27f93d2c6'
+  suggestion: block_footer_main
+visibility: {  }

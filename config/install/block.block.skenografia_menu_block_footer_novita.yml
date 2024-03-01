@@ -1,0 +1,30 @@
+langcode: it
+status: true
+dependencies:
+  config:
+    - system.menu.main
+  module:
+    - menu_block
+  theme:
+    - skenografia
+id: skenografia_menu_block_footer_novita
+theme: skenografia
+region: footer_fourth
+weight: 0
+provider: null
+plugin: 'menu_block:main'
+settings:
+  id: 'menu_block:main'
+  label: Novità
+  label_display: visible
+  provider: menu_block
+  follow: false
+  follow_parent: child
+  label_link: false
+  label_type: fixed
+  level: 1
+  depth: 0
+  expand_all_items: false
+  parent: 'main:menu_link_content:dd7d6ff9-825c-4447-9496-94379ed7d868'
+  suggestion: block_footer_main
+visibility: {  }
