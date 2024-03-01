@@ -11,7 +11,7 @@ dependencies:
   - ouitoulia:prosopon
 
 # Information added by GitHub Action packaging script on 2024-03-01
-version: '1.10.0'
+version: '1.11.0'
 project: 'Prosis'
-datestamp: 1709309019
-message: ' add footer legal'
+datestamp: 1709326580
+message: ' add footer menu'
