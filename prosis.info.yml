@@ -9,8 +9,8 @@ dependencies:
   - ouitoulia:themethla
   - ouitoulia:prosopon
 
-# Information added by GitHub Action packaging script on 2024-02-29
-version: '1.9.1'
+# Information added by GitHub Action packaging script on 2024-03-01
+version: '1.10.0'
 project: 'Prosis'
-datestamp: 1709203689
-message: ' fix typo in description'
+datestamp: 1709309019
+message: ' add footer legal'
