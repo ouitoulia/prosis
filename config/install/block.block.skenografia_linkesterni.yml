@@ -1,0 +1,30 @@
+langcode: it
+status: true
+dependencies:
+  config:
+    - system.menu.link-esterni
+  module:
+    - menu_block
+  theme:
+    - skenografia
+id: skenografia_linkesterni
+theme: skenografia
+region: footer_first
+weight: 0
+provider: null
+plugin: 'menu_block:link-esterni'
+settings:
+  id: 'menu_block:link-esterni'
+  label: 'Link esterni'
+  label_display: visible
+  provider: menu_block
+  follow: false
+  follow_parent: child
+  label_link: false
+  label_type: block
+  level: 1
+  depth: 0
+  expand_all_items: false
+  parent: 'link-esterni:'
+  suggestion: block_footer_main
+visibility: {  }

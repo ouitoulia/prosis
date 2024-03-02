@@ -21,7 +21,7 @@
     "drupal/core-recommended": ">=10",
     "drupal/menu_block": "^1.10",
     "ouitoulia/prosopon": "^4",
-    "ouitoulia/skenografia": ">=1.7.2",
-    "ouitoulia/themethla": "^3"
+    "ouitoulia/skenografia": ">=1.8.0",
+    "ouitoulia/themethla": ">=3.9"
   }
 }
