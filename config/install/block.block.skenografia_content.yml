@@ -1,0 +1,19 @@
+langcode: it
+status: true
+dependencies:
+  module:
+    - system
+  theme:
+    - skenografia
+id: skenografia_content
+theme: skenografia
+region: content
+weight: -7
+provider: null
+plugin: system_main_block
+settings:
+  id: system_main_block
+  label: 'Contenuto principale della pagina'
+  label_display: '0'
+  provider: system
+visibility: {  }
