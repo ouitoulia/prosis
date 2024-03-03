@@ -10,8 +10,8 @@ dependencies:
   - ouitoulia:themethla
   - ouitoulia:prosopon
 
-# Information added by GitHub Action packaging script on 2024-03-02
-version: '1.12.1'
+# Information added by GitHub Action packaging script on 2024-03-03
+version: '1.12.2'
 project: 'Prosis'
-datestamp: 1709378074
-message: ' add external link'
+datestamp: 1709447963
+message: ' fix theme blocks'
