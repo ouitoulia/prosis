@@ -1,5 +1,5 @@
 langcode: it
-status: true
+status: false
 dependencies:
   config:
     - system.menu.footer
