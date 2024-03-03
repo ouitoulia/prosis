@@ -11,7 +11,7 @@ dependencies:
   - ouitoulia:prosopon
 
 # Information added by GitHub Action packaging script on 2024-03-03
-version: '1.12.2'
+version: '1.12.3'
 project: 'Prosis'
-datestamp: 1709447963
-message: ' fix theme blocks'
+datestamp: 1709471696
+message: ' fix footer white border'
