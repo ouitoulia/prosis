@@ -10,8 +10,8 @@ dependencies:
   - ouitoulia:themethla
   - ouitoulia:prosopon
 
-# Information added by GitHub Action packaging script on 2024-03-03
-version: '1.12.3'
+# Information added by GitHub Action packaging script on 2024-03-04
+version: '1.12.4'
 project: 'Prosis'
-datestamp: 1709471696
-message: ' fix footer white border'
+datestamp: 1709534495
+message: ' disattivati alcuni blocchi non usati che drupal installa in automatico'
