@@ -10,8 +10,8 @@ dependencies:
   - ouitoulia:themethla
   - ouitoulia:prosopon
 
-# Information added by GitHub Action packaging script on 2024-03-04
-version: '1.12.5'
+# Information added by GitHub Action packaging script on 2024-03-05
+version: '1.13.0'
 project: 'Prosis'
-datestamp: 1709535325
-message: ' disattivati alcuni blocchi non usati che drupal installa in automatico'
+datestamp: 1709635327
+message: ' add second level page Le Persone'
