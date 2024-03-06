@@ -211,7 +211,7 @@ display:
           plugin_id: text
           empty: false
           content:
-            value: "<h1 class=\"p-0 mb-2\">Organizzazione</h1>\r\n<p class=\"leaf\">La nostra organizzazione</p>"
+            value: "<h1 class=\"p-0 mb-2\">Organizzazione</h1>\r\n<p class=\"lead\">La nostra organizzazione</p>"
             format: bootstrap_italia_2
           tokenize: false
       footer: {  }

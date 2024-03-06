@@ -379,7 +379,7 @@ display:
           plugin_id: text
           empty: false
           content:
-            value: "<h1 class=\"p-0 mb-2\">Le persone</h1>\r\n<p class=\"leaf\">[site:slogan] [site:name]<br>insegnanti, personale ATA e docenti</p>"
+            value: "<h1 class=\"p-0 mb-2\">Le persone</h1>\r\n<p class=\"lead\">[site:slogan] [site:name]<br>insegnanti, personale ATA e docenti</p>"
             format: bootstrap_italia_2
           tokenize: false
       footer: {  }

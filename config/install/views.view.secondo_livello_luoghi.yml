@@ -313,7 +313,7 @@ display:
               lat: 0.0
               lon: 0.0
             zoomControlPosition: topleft
-            zoom: 5
+            zoom: 16
             minZoom: 1
             maxZoom: 18
             zoomFiner: 0
