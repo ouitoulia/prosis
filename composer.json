@@ -19,6 +19,7 @@
   "prefer-stable": true,
   "require": {
     "drupal/core-recommended": ">=10",
+    "drupal/leaflet": ">=10.2",
     "drupal/menu_block": "^1.10",
     "ouitoulia/prosopon": "^4",
     "ouitoulia/skenografia": ">=1.8.0",
