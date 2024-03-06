@@ -12,7 +12,7 @@ dependencies:
   - ouitoulia:prosopon
 
 # Information added by GitHub Action packaging script on 2024-03-06
-version: '1.13.2'
+version: '1.13.3'
 project: 'Prosis'
-datestamp: 1709739603
-message: ' add second level page i luoghi'
+datestamp: 1709760178
+message: ' fix css class and map zoom'
