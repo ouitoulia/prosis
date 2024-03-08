@@ -11,7 +11,7 @@ dependencies:
 id: skenografia_views_block__correlati_struttura_organizz_correlati
 theme: skenografia
 region: after_content_first
-weight: 0
+weight: -8
 provider: null
 plugin: 'views_block:correlati_struttura_organizzativa-correlati'
 settings:

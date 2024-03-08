@@ -11,7 +11,7 @@ dependencies:
 id: skenografia_views_block__correlati_servizio_servizi_e_news
 theme: skenografia
 region: after_content_first
-weight: 0
+weight: -7
 provider: null
 plugin: 'views_block:correlati_servizio-servizi_e_news'
 settings:

@@ -11,7 +11,7 @@ dependencies:
 id: skenografia_views_block__correlati_percorso_di_studio_correlati
 theme: skenografia
 region: after_content_first
-weight: 0
+weight: -12
 provider: null
 plugin: 'views_block:correlati_percorso_di_studio-correlati'
 settings:
