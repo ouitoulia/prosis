@@ -11,8 +11,8 @@ dependencies:
   - ouitoulia:themethla
   - ouitoulia:prosopon
 
-# Information added by GitHub Action packaging script on 2024-03-06
-version: '1.13.3'
+# Information added by GitHub Action packaging script on 2024-03-08
+version: '1.14.0'
 project: 'Prosis'
-datestamp: 1709760178
-message: ' fix css class and map zoom'
+datestamp: 1709898833
+message: ' add servizi views'
