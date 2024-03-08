@@ -1,0 +1,28 @@
+langcode: it
+status: true
+dependencies:
+  config:
+    - views.view.primo_livello_servizi
+  module:
+    - system
+    - views
+  theme:
+    - skenografia
+id: skenografia_views_block__primo_livello_servizi_percorsi_di_stud
+theme: skenografia
+region: after_content_first
+weight: 0
+provider: null
+plugin: 'views_block:primo_livello_servizi-percorsi_di_studio'
+settings:
+  id: 'views_block:primo_livello_servizi-percorsi_di_studio'
+  label: ''
+  label_display: '0'
+  provider: views
+  views_label: ''
+  items_per_page: none
+visibility:
+  request_path:
+    id: request_path
+    negate: false
+    pages: /servizi
