@@ -6,6 +6,7 @@ type: module
 core_version_requirement: ^10
 dependencies:
   - drupal:views
+  - better_exposed_filters:better_exposed_filters
   - leaflet:leaflet_views
   - menu_block:menu_block
   - ouitoulia:themethla

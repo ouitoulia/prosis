@@ -4,8 +4,16 @@ dependencies:
   config:
     - core.entity_view_mode.node.card_scuola_big_image
     - node.type.percorso_di_studio
+    - taxonomy.vocabulary.indirizzi_di_studio
+  content:
+    - 'taxonomy_term:indirizzi_di_studio:626d1ad1-1477-453e-a100-02150cc7eb09'
+    - 'taxonomy_term:indirizzi_di_studio:b54b101a-2c13-4727-8d5f-60a65c4bb7e5'
+    - 'taxonomy_term:indirizzi_di_studio:f1835c36-a740-4904-a0af-a7a74559fcf5'
+    - 'taxonomy_term:indirizzi_di_studio:fc1802d9-9906-4516-849c-a23580566e39'
   module:
+    - better_exposed_filters
     - node
+    - taxonomy
     - user
 id: secondo_livello_percorsi_di_studio
 label: 'Secondo livello Percorsi di studio'
@@ -89,7 +97,7 @@ display:
             offset: false
             offset_label: Scostamento
       exposed_form:
-        type: basic
+        type: bef
         options:
           submit_button: Applica
           reset_button: false
@@ -98,6 +106,31 @@ display:
           expose_sort_order: true
           sort_asc_label: Asc
           sort_desc_label: Disc
+          text_input_required: 'Seleziona qualsiasi filtro e clicca su Applica per visualizzare i risultati'
+          text_input_required_format: bootstrap_italia_2
+          bef:
+            general:
+              autosubmit: true
+              autosubmit_exclude_textfield: false
+              autosubmit_textfield_delay: 500
+              autosubmit_hide: true
+              input_required: false
+              allow_secondary: false
+              secondary_label: 'Opzioni avanzate'
+              secondary_open: false
+              reset_button_always_show: false
+            filter:
+              field_grado_di_istruzione_target_id:
+                plugin_id: bef
+                advanced:
+                  sort_options: true
+                  rewrite:
+                    filter_rewrite_values: ''
+                  collapsible: false
+                  is_secondary: false
+                select_all_none: false
+                select_all_none_nested: false
+                display_inline: false
       access:
         type: perm
         options:
@@ -145,8 +178,79 @@ display:
           plugin_id: bundle
           value:
             percorso_di_studio: percorso_di_studio
+        field_grado_di_istruzione_target_id:
+          id: field_grado_di_istruzione_target_id
+          table: node__field_grado_di_istruzione
+          field: field_grado_di_istruzione_target_id
+          relationship: none
+          group_type: group
+          admin_label: ''
+          plugin_id: taxonomy_index_tid
+          operator: or
+          value:
+            3001: 3001
+            3051: 3051
+            3101: 3101
+            3201: 3201
+          group: 1
+          exposed: true
+          expose:
+            operator_id: field_grado_di_istruzione_target_id_op
+            label: 'Percorsi di studio'
+            description: ''
+            use_operator: false
+            operator: field_grado_di_istruzione_target_id_op
+            operator_limit_selection: false
+            operator_list: {  }
+            identifier: field_grado_di_istruzione_target_id
+            required: false
+            remember: false
+            multiple: false
+            remember_roles:
+              authenticated: authenticated
+              anonymous: '0'
+              ex_amministrativo: '0'
+              ex_collaboratore: '0'
+              ex_dirigente: '0'
+              ex_docente: '0'
+              ex_dsga: '0'
+              ex_tecnico: '0'
+              personale_docente: '0'
+              personale_non_docente: '0'
+              collaboratore: '0'
+              direttore_amministrativo_dsga_: '0'
+              personale_amministrativo: '0'
+              personale_tecnico: '0'
+              amministrazione_sito: '0'
+              amministratore: '0'
+              capo_redattore: '0'
+              redattore: '0'
+              dirigente_scolastico: '0'
+            reduce: true
+          is_grouped: false
+          group_info:
+            label: ''
+            description: ''
+            identifier: ''
+            optional: true
+            widget: select
+            multiple: false
+            remember: false
+            default_group: All
+            default_group_multiple: {  }
+            group_items: {  }
+          reduce_duplicates: false
+          vid: indirizzi_di_studio
+          type: select
+          hierarchy: false
+          limit: true
+          error_message: true
       style:
         type: default
+        options:
+          row_class: ''
+          default_row_class: true
+          uses_fields: true
       row:
         type: 'entity:node'
         options:
@@ -161,6 +265,7 @@ display:
           replica: false
           query_tags: {  }
       relationships: {  }
+      use_ajax: true
       header:
         area:
           id: area
@@ -182,6 +287,7 @@ display:
       contexts:
         - 'languages:language_content'
         - 'languages:language_interface'
+        - url
         - url.query_args
         - 'user.node_grants:view'
         - user.permissions
@@ -200,6 +306,7 @@ display:
       contexts:
         - 'languages:language_content'
         - 'languages:language_interface'
+        - url
         - url.query_args
         - 'user.node_grants:view'
         - user.permissions
