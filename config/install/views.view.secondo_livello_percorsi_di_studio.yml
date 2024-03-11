@@ -275,7 +275,7 @@ display:
           group_type: group
           admin_label: ''
           plugin_id: text
-          empty: false
+          empty: true
           content:
             value: "<h1 class=\"p-0 mb-2\">Percorsi di studio</h1>\r\n<p class=\"lead\">Tutti i percorsi di studio che la scuola offre</p>"
             format: bootstrap_italia_2
