@@ -13,7 +13,7 @@ dependencies:
   - ouitoulia:prosopon
 
 # Information added by GitHub Action packaging script on 2024-03-11
-version: '1.17.1'
+version: '1.17.2'
 project: 'Prosis'
-datestamp: 1710150922
+datestamp: 1710153640
 message: ' fix second level percorsi di studio'
