@@ -1,0 +1,28 @@
+langcode: it
+status: true
+dependencies:
+  config:
+    - views.view.secondo_livello_servizi
+  module:
+    - system
+    - views
+  theme:
+    - skenografia
+id: skenografia_views_block__secondo_livello_servizi_famiglie_e_s
+theme: skenografia
+region: content_views_second_level
+weight: 0
+provider: null
+plugin: 'views_block:secondo_livello_servizi-famiglie_e_studenti'
+settings:
+  id: 'views_block:secondo_livello_servizi-famiglie_e_studenti'
+  label: ''
+  label_display: '0'
+  provider: views
+  views_label: ''
+  items_per_page: none
+visibility:
+  request_path:
+    id: request_path
+    negate: false
+    pages: /servizi/famiglie-e-studenti
