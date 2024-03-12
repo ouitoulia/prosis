@@ -13,7 +13,7 @@ dependencies:
   - ouitoulia:prosopon
 
 # Information added by GitHub Action packaging script on 2024-03-12
-version: '1.18.0'
+version: '1.18.1'
 project: 'Prosis'
-datestamp: 1710227919
-message: ' servizi pagine di secondo livello'
+datestamp: 1710230555
+message: ' fix views taxonomy term'
