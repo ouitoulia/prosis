@@ -2,20 +2,20 @@ langcode: it
 status: true
 dependencies:
   config:
-    - views.view.primo_livello_servizi
+    - views.view.primo_livello_novita
   module:
     - system
     - views
   theme:
     - skenografia
-id: skenografia_views_block__primo_livello_servizi_personale
+id: skenografia_views_block__primo_livello_novita_eventi
 theme: skenografia
 region: content_views_first_level
-weight: -18
+weight: 0
 provider: null
-plugin: 'views_block:primo_livello_servizi-personale'
+plugin: 'views_block:primo_livello_novita-eventi'
 settings:
-  id: 'views_block:primo_livello_servizi-personale'
+  id: 'views_block:primo_livello_novita-eventi'
   label: ''
   label_display: '0'
   provider: views
@@ -25,4 +25,4 @@ visibility:
   request_path:
     id: request_path
     negate: false
-    pages: /servizi
+    pages: /novita
