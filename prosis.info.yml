@@ -12,8 +12,8 @@ dependencies:
   - ouitoulia:themethla
   - ouitoulia:prosopon
 
-# Information added by GitHub Action packaging script on 2024-03-14
-version: '1.18.2'
+# Information added by GitHub Action packaging script on 2024-03-15
+version: '1.19.0'
 project: 'Prosis'
-datestamp: 1710411217
-message: ' fix views taxonomy term'
+datestamp: 1710513912
+message: ' add novità views'
