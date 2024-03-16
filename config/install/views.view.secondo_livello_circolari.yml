@@ -137,7 +137,20 @@ display:
       cache:
         type: tag
         options: {  }
-      empty: {  }
+      empty:
+        area:
+          id: area
+          table: views
+          field: area
+          relationship: none
+          group_type: group
+          admin_label: ''
+          plugin_id: text
+          empty: true
+          content:
+            value: 'Attualmente non ci sono circolari In questa categoria'
+            format: bootstrap_italia_2
+          tokenize: false
       sorts:
         created:
           id: created
@@ -316,7 +329,7 @@ display:
           group_type: group
           admin_label: ''
           plugin_id: text
-          empty: false
+          empty: true
           content:
             value: "<h1 class=\"p-0 mb-2\">Le circolari</h1>\r\n<p class=\"lead\">Le circolari dell'istituto</p>"
             format: bootstrap_italia_2
