@@ -95,7 +95,7 @@ display:
             items_per_page_options_all_label: '- Tutto -'
             offset: false
             offset_label: Scostamento
-          quantity: 9
+          quantity: 4
       exposed_form:
         type: bef
         options:
@@ -200,7 +200,7 @@ display:
             operator_limit_selection: false
             operator_list: {  }
             identifier: field_tipologia_notizia_target_id
-            required: false
+            required: true
             remember: false
             multiple: false
             remember_roles:
