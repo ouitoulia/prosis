@@ -25,4 +25,4 @@ visibility:
   request_path:
     id: request_path
     negate: false
-    pages: /novita/le-notizie
+    pages: "/novita/gli-articoli\r\n/novita/la-rassegna-stampa\r\n/novita/le-notizie"

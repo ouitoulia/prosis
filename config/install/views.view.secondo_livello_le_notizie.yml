@@ -201,11 +201,11 @@ display:
             operator_list: {  }
             identifier: field_tipologia_notizia_target_id
             required: true
-            remember: false
+            remember: true
             multiple: false
             remember_roles:
+              anonymous: anonymous
               authenticated: authenticated
-              anonymous: '0'
               ex_amministrativo: '0'
               ex_collaboratore: '0'
               ex_dirigente: '0'
