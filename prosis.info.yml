@@ -13,7 +13,7 @@ dependencies:
   - ouitoulia:prosopon
 
 # Information added by GitHub Action packaging script on 2024-03-16
-version: '1.20.1'
+version: '1.21.0'
 project: 'Prosis'
-datestamp: 1710583194
-message: ' fix filter second level le notizie'
+datestamp: 1710598077
+message: ' add second level circolari'
