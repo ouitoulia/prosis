@@ -2,20 +2,20 @@ langcode: it
 status: true
 dependencies:
   config:
-    - views.view.secondo_livello_luoghi
+    - views.view.secondo_livello_le_notizie
   module:
     - system
     - views
   theme:
     - skenografia
-id: skenografia_views_block__secondo_livello_luoghi_tutti
+id: skenografia_views_block__secondo_livello_le_notizie_le_notizie
 theme: skenografia
 region: content_views_second_level
-weight: -19
+weight: 0
 provider: null
-plugin: 'views_block:secondo_livello_luoghi-tutti'
+plugin: 'views_block:secondo_livello_le_notizie-le_notizie'
 settings:
-  id: 'views_block:secondo_livello_luoghi-tutti'
+  id: 'views_block:secondo_livello_le_notizie-le_notizie'
   label: ''
   label_display: '0'
   provider: views
@@ -25,4 +25,4 @@ visibility:
   request_path:
     id: request_path
     negate: false
-    pages: /scuola/i-luoghi
+    pages: /novita/le-notizie

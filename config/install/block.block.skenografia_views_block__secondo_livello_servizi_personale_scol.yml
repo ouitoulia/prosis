@@ -11,7 +11,7 @@ dependencies:
 id: skenografia_views_block__secondo_livello_servizi_personale_scol
 theme: skenografia
 region: content_views_second_level
-weight: 0
+weight: -17
 provider: null
 plugin: 'views_block:secondo_livello_servizi-personale_scolastico'
 settings:

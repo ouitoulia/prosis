@@ -11,7 +11,7 @@ dependencies:
 id: skenografia_views_block__secondo_livello_servizi_famiglie_e_s
 theme: skenografia
 region: content_views_second_level
-weight: 0
+weight: -18
 provider: null
 plugin: 'views_block:secondo_livello_servizi-famiglie_e_studenti'
 settings:
