@@ -12,8 +12,8 @@ dependencies:
   - ouitoulia:themethla
   - ouitoulia:prosopon
 
-# Information added by GitHub Action packaging script on 2024-03-16
-version: '1.21.2'
+# Information added by GitHub Action packaging script on 2024-03-17
+version: '1.22.0'
 project: 'Prosis'
-datestamp: 1710600607
-message: ' fix scope and exposed filters'
+datestamp: 1710669524
+message: ' add card vertical-thumb'
