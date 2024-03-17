@@ -13,7 +13,7 @@ dependencies:
   - ouitoulia:prosopon
 
 # Information added by GitHub Action packaging script on 2024-03-17
-version: '1.22.0'
+version: '1.23.0'
 project: 'Prosis'
-datestamp: 1710669524
-message: ' add card vertical-thumb'
+datestamp: 1710688791
+message: ' add calendario eventi'
