@@ -2,6 +2,7 @@ langcode: it
 status: true
 dependencies:
   config:
+    - core.entity_view_mode.node.card_scuola_vertical_thumb
     - core.entity_view_mode.node.teaser
     - field.storage.node.field_tipologia_notizia
     - node.type.article
@@ -261,7 +262,8 @@ display:
       row:
         type: 'entity:node'
         options:
-          view_mode: teaser
+          relationship: none
+          view_mode: card_scuola_vertical_thumb
       query:
         type: views_query
         options:
