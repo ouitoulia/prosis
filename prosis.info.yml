@@ -12,8 +12,8 @@ dependencies:
   - ouitoulia:themethla
   - ouitoulia:prosopon
 
-# Information added by GitHub Action packaging script on 2024-03-17
-version: '1.23.0'
+# Information added by GitHub Action packaging script on 2024-03-18
+version: '1.23.1'
 project: 'Prosis'
-datestamp: 1710688791
-message: ' add calendario eventi'
+datestamp: 1710758727
+message: ' fix data_oblio circolari'
