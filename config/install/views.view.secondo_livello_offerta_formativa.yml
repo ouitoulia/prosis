@@ -248,7 +248,7 @@ display:
           plugin_id: text
           empty: false
           content:
-            value: "<h1 class=\"text-white mb-0 fw-lighter\">La didattica</h1>\r\n<p class=\"lead\">la nostra offerta formativa</h2>"
+            value: "<h1 class=\"text-white mb-0 fw-lighter\">La didattica</h1>\r\n<p class=\"lead fw-bold\">la nostra offerta formativa</h2>"
             format: bootstrap_italia_2
           tokenize: false
       footer: {  }
