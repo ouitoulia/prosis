@@ -3,18 +3,18 @@ status: true
 dependencies:
   config:
     - core.entity_view_mode.node.card_scuola_big_image
-    - node.type.circolare
-    - taxonomy.vocabulary.destinatari
+    - node.type.progetto
+    - taxonomy.vocabulary.anni_scolastici
+    - taxonomy.vocabulary.tipologia_progetti
   module:
     - better_exposed_filters
-    - datetime
     - node
     - taxonomy
     - user
-id: secondo_livello_circolari
-label: 'Secondo livello Circolari'
+id: secondo_livello_progetti
+label: 'Secondo livello Progetti'
 module: views
-description: 'Visualizza la pagina di secondo livello "Le Circolari" suddivise per destinatari'
+description: 'Visualizza la pagina di secondo livello "I progetti delle classi"'
 tag: ''
 base_table: node_field_data
 base_field: nid
@@ -25,7 +25,7 @@ display:
     display_plugin: default
     position: 0
     display_options:
-      title: 'Le Circolari'
+      title: 'I progetti delle classi'
       fields:
         title:
           id: title
@@ -78,7 +78,7 @@ display:
         type: full
         options:
           offset: 0
-          items_per_page: 10
+          items_per_page: 8
           total_pages: null
           id: 0
           tags:
@@ -119,7 +119,15 @@ display:
               secondary_open: false
               reset_button_always_show: false
             filter:
-              field_destinatari_target_id:
+              field_anno_scolastico_target_id:
+                plugin_id: default
+                advanced:
+                  sort_options: false
+                  rewrite:
+                    filter_rewrite_values: ''
+                  collapsible: false
+                  is_secondary: false
+              field_tipologia_progetto_target_id:
                 plugin_id: bef
                 advanced:
                   sort_options: false
@@ -148,7 +156,7 @@ display:
           plugin_id: text
           empty: true
           content:
-            value: 'Attualmente non ci sono circolari In questa categoria'
+            value: 'Attualmente non ci sono progetti in questa categoria.'
             format: bootstrap_italia_2
           tokenize: false
       sorts:
@@ -189,12 +197,12 @@ display:
           entity_field: type
           plugin_id: bundle
           value:
-            circolare: circolare
+            progetto: progetto
           group: 1
-        field_destinatari_target_id:
-          id: field_destinatari_target_id
-          table: node__field_destinatari
-          field: field_destinatari_target_id
+        field_anno_scolastico_target_id:
+          id: field_anno_scolastico_target_id
+          table: node__field_anno_scolastico
+          field: field_anno_scolastico_target_id
           relationship: none
           group_type: group
           admin_label: ''
@@ -204,20 +212,20 @@ display:
           group: 1
           exposed: true
           expose:
-            operator_id: field_destinatari_target_id_op
-            label: Destinatari
+            operator_id: field_anno_scolastico_target_id_op
+            label: 'Anno scolastico'
             description: ''
             use_operator: false
-            operator: field_destinatari_target_id_op
+            operator: field_anno_scolastico_target_id_op
             operator_limit_selection: false
             operator_list: {  }
-            identifier: field_destinatari_target_id
+            identifier: field_anno_scolastico_target_id
             required: false
-            remember: false
+            remember: true
             multiple: false
             remember_roles:
+              anonymous: anonymous
               authenticated: authenticated
-              anonymous: '0'
               ex_amministrativo: '0'
               ex_collaboratore: '0'
               ex_dirigente: '0'
@@ -249,44 +257,56 @@ display:
             default_group_multiple: {  }
             group_items: {  }
           reduce_duplicates: false
-          vid: destinatari
+          vid: anni_scolastici
           type: select
           hierarchy: false
           limit: true
           error_message: true
-        field_data_oblio_value_1:
-          id: field_data_oblio_value_1
-          table: node__field_data_oblio
-          field: field_data_oblio_value
+        field_tipologia_progetto_target_id:
+          id: field_tipologia_progetto_target_id
+          table: node__field_tipologia_progetto
+          field: field_tipologia_progetto_target_id
           relationship: none
           group_type: group
           admin_label: ''
-          plugin_id: datetime
-          operator: empty
-          value:
-            min: ''
-            max: ''
-            value: ''
-            type: date
-          group: 2
-          exposed: false
+          plugin_id: taxonomy_index_tid
+          operator: or
+          value: {  }
+          group: 1
+          exposed: true
           expose:
-            operator_id: ''
-            label: ''
+            operator_id: field_tipologia_progetto_target_id_op
+            label: Tipologia
             description: ''
             use_operator: false
-            operator: ''
+            operator: field_tipologia_progetto_target_id_op
             operator_limit_selection: false
             operator_list: {  }
-            identifier: ''
+            identifier: field_tipologia_progetto_target_id
             required: false
-            remember: false
+            remember: true
             multiple: false
             remember_roles:
+              anonymous: anonymous
               authenticated: authenticated
-            min_placeholder: ''
-            max_placeholder: ''
-            placeholder: ''
+              ex_amministrativo: '0'
+              ex_collaboratore: '0'
+              ex_dirigente: '0'
+              ex_docente: '0'
+              ex_dsga: '0'
+              ex_tecnico: '0'
+              personale_docente: '0'
+              personale_non_docente: '0'
+              collaboratore: '0'
+              direttore_amministrativo_dsga_: '0'
+              personale_amministrativo: '0'
+              personale_tecnico: '0'
+              amministrazione_sito: '0'
+              amministratore: '0'
+              capo_redattore: '0'
+              redattore: '0'
+              dirigente_scolastico: '0'
+            reduce: false
           is_grouped: false
           group_info:
             label: ''
@@ -299,58 +319,22 @@ display:
             default_group: All
             default_group_multiple: {  }
             group_items: {  }
-        field_data_oblio_value:
-          id: field_data_oblio_value
-          table: node__field_data_oblio
-          field: field_data_oblio_value
-          relationship: none
-          group_type: group
-          admin_label: ''
-          plugin_id: datetime
-          operator: '>'
-          value:
-            min: ''
-            max: ''
-            value: now
-            type: offset
-          group: 2
-          exposed: false
-          expose:
-            operator_id: ''
-            label: ''
-            description: ''
-            use_operator: false
-            operator: ''
-            operator_limit_selection: false
-            operator_list: {  }
-            identifier: ''
-            required: false
-            remember: false
-            multiple: false
-            remember_roles:
-              authenticated: authenticated
-            min_placeholder: ''
-            max_placeholder: ''
-            placeholder: ''
-          is_grouped: false
-          group_info:
-            label: ''
-            description: ''
-            identifier: ''
-            optional: true
-            widget: select
-            multiple: false
-            remember: false
-            default_group: All
-            default_group_multiple: {  }
-            group_items: {  }
+          reduce_duplicates: false
+          vid: tipologia_progetti
+          type: select
+          hierarchy: false
+          limit: true
+          error_message: true
       filter_groups:
         operator: AND
         groups:
           1: AND
-          2: OR
       style:
         type: default
+        options:
+          row_class: ''
+          default_row_class: false
+          uses_fields: false
       row:
         type: 'entity:node'
         options:
@@ -377,7 +361,7 @@ display:
           plugin_id: text
           empty: true
           content:
-            value: "<h1 class=\"p-0 mb-2\">Le circolari</h1>\r\n<p class=\"lead\">Le circolari dell'istituto</p>"
+            value: "<h1 class=\"p-0 mb-2\">I progetti delle classi</h1>\r\n<p class=\"lead\">I progetti ideati dai docenti della scuola.</p>"
             format: bootstrap_italia_2
           tokenize: false
       footer: {  }
@@ -392,15 +376,15 @@ display:
         - 'user.node_grants:view'
         - user.permissions
       tags: {  }
-  circolari:
-    id: circolari
-    display_title: 'Le circolari'
+  page_1:
+    id: page_1
+    display_title: 'I progetti delle classi'
     display_plugin: page
     position: 1
     display_options:
-      display_description: 'Visualizza le ultime Circolari'
+      display_description: 'Visualizza gli ultimi Progetti'
       display_extenders: {  }
-      path: novita/le-circolari
+      path: didattica/i-progetti-delle-classi
     cache_metadata:
       max-age: -1
       contexts:
