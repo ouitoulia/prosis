@@ -13,7 +13,7 @@ dependencies:
   - ouitoulia:prosopon
 
 # Information added by GitHub Action packaging script on 2024-03-21
-version: '1.25.0'
+version: '1.26.0'
 project: 'Prosis'
-datestamp: 1711027414
-message: ' add schede_didattiche second level view'
+datestamp: 1711057458
+message: ' add progetti second level view'
