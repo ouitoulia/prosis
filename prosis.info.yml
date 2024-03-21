@@ -12,8 +12,8 @@ dependencies:
   - ouitoulia:themethla
   - ouitoulia:prosopon
 
-# Information added by GitHub Action packaging script on 2024-03-20
-version: '1.24.2'
+# Information added by GitHub Action packaging script on 2024-03-21
+version: '1.25.0'
 project: 'Prosis'
-datestamp: 1710971138
-message: ' fix offerta_formativa title view'
+datestamp: 1711027414
+message: ' add schede_didattiche second level view'
