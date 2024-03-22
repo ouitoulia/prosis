@@ -2,20 +2,20 @@ langcode: it
 status: true
 dependencies:
   config:
-    - views.view.primo_livello_servizi
+    - views.view.primo_livello_didattica
   module:
     - system
     - views
   theme:
     - skenografia
-id: skenografia_views_block__primo_livello_servizi_altri
+id: skenografia_views_block__primo_livello_didattica_progetti
 theme: skenografia
 region: content_views_first_level
-weight: -17
+weight: -14
 provider: null
-plugin: 'views_block:primo_livello_servizi-altri'
+plugin: 'views_block:primo_livello_didattica-progetti'
 settings:
-  id: 'views_block:primo_livello_servizi-altri'
+  id: 'views_block:primo_livello_didattica-progetti'
   label: ''
   label_display: '0'
   provider: views
@@ -25,4 +25,4 @@ visibility:
   request_path:
     id: request_path
     negate: false
-    pages: /servizi
+    pages: /didattica

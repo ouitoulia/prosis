@@ -12,7 +12,7 @@ dependencies:
 id: secondo_livello_offerta_formativa
 label: 'Secondo livello Offerta formativa'
 module: views
-description: 'Visualizza la pagina di secondo livello "Offerta formativa"'
+description: 'Visualizza la pagina di secondo livello "Offerta formativa". È simile a Primo livello didattica ma cambiano alcuni dettagli.'
 tag: ''
 base_table: node_field_data
 base_field: nid
@@ -172,7 +172,20 @@ display:
       cache:
         type: tag
         options: {  }
-      empty: {  }
+      empty:
+        area:
+          id: area
+          table: views
+          field: area
+          relationship: none
+          group_type: group
+          admin_label: ''
+          plugin_id: text
+          empty: true
+          content:
+            value: 'Ancora non è presente nessun contenuto di tipo "Percorso di studio" .'
+            format: bootstrap_italia_2
+          tokenize: false
       sorts:
         created_1:
           id: created_1

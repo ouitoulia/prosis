@@ -11,7 +11,7 @@ dependencies:
 id: skenografia_views_block__primo_livello_novita_circolari
 theme: skenografia
 region: content_views_first_level
-weight: -15
+weight: -16
 provider: null
 plugin: 'views_block:primo_livello_novita-circolari'
 settings:

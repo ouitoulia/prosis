@@ -11,7 +11,7 @@ dependencies:
 id: skenografia_views_block__primo_livello_servizi_percorsi_di_stud
 theme: skenografia
 region: content_views_first_level
-weight: -17
+weight: -18
 provider: null
 plugin: 'views_block:primo_livello_servizi-percorsi_di_studio'
 settings:

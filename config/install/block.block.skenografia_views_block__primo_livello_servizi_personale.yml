@@ -11,7 +11,7 @@ dependencies:
 id: skenografia_views_block__primo_livello_servizi_personale
 theme: skenografia
 region: content_views_first_level
-weight: -18
+weight: -19
 provider: null
 plugin: 'views_block:primo_livello_servizi-personale'
 settings:
