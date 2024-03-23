@@ -12,8 +12,8 @@ dependencies:
   - ouitoulia:themethla
   - ouitoulia:prosopon
 
-# Information added by GitHub Action packaging script on 2024-03-22
-version: '1.27.0'
+# Information added by GitHub Action packaging script on 2024-03-23
+version: '1.28.0'
 project: 'Prosis'
-datestamp: 1711125060
-message: ' add didattica first level'
+datestamp: 1711193894
+message: ' add i numeri della scuola second level'
