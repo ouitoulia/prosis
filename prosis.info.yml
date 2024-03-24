@@ -13,7 +13,7 @@ dependencies:
   - ouitoulia:prosopon
 
 # Information added by GitHub Action packaging script on 2024-03-24
-version: '1.28.1'
+version: '1.28.2'
 project: 'Prosis'
-datestamp: 1711295144
-message: ' fix missing footer link'
+datestamp: 1711296035
+message: ' fix missing views link'
