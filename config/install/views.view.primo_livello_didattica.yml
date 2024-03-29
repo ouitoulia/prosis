@@ -598,7 +598,7 @@ display:
           plugin_id: text
           empty: false
           content:
-            value: '<h2 class="mb-2">Le schede didattiche</h1><p class="lead">Approfondimenti tematici, guide e esercizi creati dai docenti della scuola e a disposizione di tutti.</p>'
+            value: '<h2 class="mb-2 fw-semibold">Le schede didattiche</h1><p class="lead">Approfondimenti tematici, guide e esercizi creati dai docenti della scuola e a disposizione di tutti.</p>'
             format: bootstrap_italia_2
           tokenize: false
       footer:

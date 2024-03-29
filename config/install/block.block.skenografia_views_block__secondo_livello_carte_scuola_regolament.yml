@@ -2,20 +2,20 @@ langcode: it
 status: true
 dependencies:
   config:
-    - views.view.secondo_livello_le_notizie
+    - views.view.secondo_livello_carte_della_scuola
   module:
     - system
     - views
   theme:
     - skenografia
-id: skenografia_views_block__secondo_livello_le_notizie_le_notizie
+id: skenografia_views_block__secondo_livello_carte_scuola_regolament
 theme: skenografia
 region: content_views_second_level
-weight: -17
+weight: -20
 provider: null
-plugin: 'views_block:secondo_livello_le_notizie-le_notizie'
+plugin: 'views_block:secondo_livello_carte_della_scuola-regolamenti'
 settings:
-  id: 'views_block:secondo_livello_le_notizie-le_notizie'
+  id: 'views_block:secondo_livello_carte_della_scuola-regolamenti'
   label: ''
   label_display: '0'
   provider: views
@@ -25,4 +25,4 @@ visibility:
   request_path:
     id: request_path
     negate: false
-    pages: "/novita/gli-articoli\r\n/novita/la-rassegna-stampa\r\n/novita/le-notizie"
+    pages: /scuola/le-carte-della-scuola

@@ -489,7 +489,7 @@ display:
           plugin_id: text
           empty: false
           content:
-            value: "<h1 class=\"p-0 mb-2\">I Plessi</h1>\r\n <p class=\"lead\">Tutti i plessi della nostra scuola</p>"
+            value: "<h1 class=\"p-0 mb-2 fw-lighter\">I Plessi</h1>\r\n <p class=\"lead\">Tutti i plessi della nostra scuola</p>"
             format: bootstrap_italia_2
           tokenize: false
       display_extenders: {  }
