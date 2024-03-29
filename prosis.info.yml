@@ -12,8 +12,8 @@ dependencies:
   - ouitoulia:themethla
   - ouitoulia:prosopon
 
-# Information added by GitHub Action packaging script on 2024-03-24
-version: '1.28.2'
+# Information added by GitHub Action packaging script on 2024-03-29
+version: '1.30.0'
 project: 'Prosis'
-datestamp: 1711296035
-message: ' fix missing views link'
+datestamp: 1711731525
+message: ' add le-carte-della-scuola and review header views'
