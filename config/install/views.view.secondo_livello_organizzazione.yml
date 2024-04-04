@@ -7,6 +7,7 @@ dependencies:
     - node.type.struttura_organizzativa
   module:
     - node
+    - taxonomy
     - user
 id: secondo_livello_organizzazione
 label: 'Secondo livello Organizzazione'
@@ -124,6 +125,21 @@ display:
         options: {  }
       empty: {  }
       sorts:
+        weight:
+          id: weight
+          table: taxonomy_term_field_data
+          field: weight
+          relationship: field_tipologia_struttura
+          group_type: group
+          admin_label: ''
+          entity_type: taxonomy_term
+          entity_field: weight
+          plugin_id: standard
+          order: ASC
+          expose:
+            label: ''
+            field_identifier: ''
+          exposed: false
         field_tipologia_struttura_target_id:
           id: field_tipologia_struttura_target_id
           table: node__field_tipologia_struttura
@@ -198,7 +214,16 @@ display:
           distinct: false
           replica: false
           query_tags: {  }
-      relationships: {  }
+      relationships:
+        field_tipologia_struttura:
+          id: field_tipologia_struttura
+          table: node__field_tipologia_struttura
+          field: field_tipologia_struttura
+          relationship: none
+          group_type: group
+          admin_label: 'field_tipologia_struttura: Termine della tassonomia'
+          plugin_id: standard
+          required: false
       use_ajax: true
       header:
         area:
