@@ -241,6 +241,9 @@ display:
           query_tags: {  }
       relationships: {  }
       use_ajax: true
+      use_more: false
+      use_more_always: true
+      use_more_text: 'Vedi tutti'
       header:
         area:
           id: area
@@ -467,11 +470,11 @@ display:
       tags: {  }
   regolamenti:
     id: regolamenti
-    display_title: Regolamenti
+    display_title: 'I Documenti di maggior rilievo'
     display_plugin: block
     position: 2
     display_options:
-      title: Regolamenti
+      title: 'Documenti di maggior rilievo'
       fields:
         field_tipologia_documento:
           id: field_tipologia_documento
@@ -887,7 +890,7 @@ display:
         filters: false
         filter_groups: false
         header: false
-      display_description: 'Visualizza i regolamenti della scuola'
+      display_description: 'Visualizza i documenti di maggior rilievo'
       header:
         area:
           id: area
