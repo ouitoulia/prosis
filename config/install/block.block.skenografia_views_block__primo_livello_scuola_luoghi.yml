@@ -8,14 +8,14 @@ dependencies:
     - views
   theme:
     - skenografia
-id: skenografia_views_block__primo_livello_scuola_organizzazione
+id: skenografia_views_block__primo_livello_scuola_luoghi
 theme: skenografia
 region: content_views_first_level
-weight: -22
+weight: -20
 provider: null
-plugin: 'views_block:primo_livello_scuola-organizzazione'
+plugin: 'views_block:primo_livello_scuola-luoghi'
 settings:
-  id: 'views_block:primo_livello_scuola-organizzazione'
+  id: 'views_block:primo_livello_scuola-luoghi'
   label: ''
   label_display: '0'
   provider: views

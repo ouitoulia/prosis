@@ -11,7 +11,7 @@ dependencies:
 id: skenografia_views_block__primo_livello_scuola_documenti
 theme: skenografia
 region: content_views_first_level
-weight: -20
+weight: -21
 provider: null
 plugin: 'views_block:primo_livello_scuola-documenti'
 settings:
