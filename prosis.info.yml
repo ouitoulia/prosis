@@ -13,7 +13,7 @@ dependencies:
   - ouitoulia:prosopon
 
 # Information added by GitHub Action packaging script on 2024-04-05
-version: '1.34.1'
+version: '1.34.1 '
 project: 'Prosis'
 datestamp: 1712321162
 message: ' patch https://github.com/ouitoulia/diagraphe/issues/1'
