@@ -2,20 +2,20 @@ langcode: it
 status: true
 dependencies:
   config:
-    - views.view.primo_livello_didattica
+    - views.view.secondo_livello_numeri_della_scuola
   module:
     - system
     - views
   theme:
     - skenografia
-id: skenografia_views_block__primo_livello_didattica_schede_didatt
+id: skenografia_views_block__primo_livello_scuola_numeri_della_scuol
 theme: skenografia
 region: content_views_first_level
-weight: -12
+weight: -19
 provider: null
-plugin: 'views_block:primo_livello_didattica-schede_didattiche'
+plugin: 'views_block:secondo_livello_numeri_della_scuola-i_numeri_della_scuola'
 settings:
-  id: 'views_block:primo_livello_didattica-schede_didattiche'
+  id: 'views_block:secondo_livello_numeri_della_scuola-i_numeri_della_scuola'
   label: ''
   label_display: '0'
   provider: views
@@ -25,4 +25,4 @@ visibility:
   request_path:
     id: request_path
     negate: false
-    pages: /didattica
+    pages: /scuola

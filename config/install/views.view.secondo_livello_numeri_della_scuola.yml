@@ -403,11 +403,47 @@ display:
           plugin_id: text
           empty: false
           content:
-            value: "<h1 class=\"p-0 mb-2 fw-lighter\">I numeri della scuola</h1>\r\n <p class=\"lead\">La scuola in numeri</p>"
+            value: "<h1 class=\"p-0 mb-2 fw-lighter\">I numeri della scuola</h1>\r\n<p class=\"lead\">La scuola in numeri</p>"
             format: bootstrap_italia_2
           tokenize: false
       footer: {  }
       display_extenders: {  }
+    cache_metadata:
+      max-age: -1
+      contexts:
+        - 'languages:language_content'
+        - 'languages:language_interface'
+        - 'user.node_grants:view'
+        - user.permissions
+      tags:
+        - 'config:field.storage.node.field_link'
+        - 'config:field.storage.node.field_numero_alunni'
+        - 'config:field.storage.node.field_numero_classi'
+  i_numeri_della_scuola:
+    id: i_numeri_della_scuola
+    display_title: 'I numeri della scuola'
+    display_plugin: block
+    position: 2
+    display_options:
+      defaults:
+        header: false
+      display_description: 'Visualizza i dati estraendoli dal luogo impostato come sede legale'
+      header:
+        area:
+          id: area
+          table: views
+          field: area
+          relationship: none
+          group_type: group
+          admin_label: ''
+          plugin_id: text
+          empty: false
+          content:
+            value: "<h2 class=\"mb-2 fw-lighter\">I numeri della scuola</h1>\r\n<p class=\"lead\">La scuola in numeri</p>"
+            format: bootstrap_italia_2
+          tokenize: false
+      display_extenders: {  }
+      block_hide_empty: true
     cache_metadata:
       max-age: -1
       contexts:
