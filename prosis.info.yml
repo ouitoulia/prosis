@@ -13,7 +13,7 @@ dependencies:
   - ouitoulia:prosopon
 
 # Information added by GitHub Action packaging script on 2024-04-04
-version: '1.31.2'
+version: '1.31.3'
 project: 'Prosis'
-datestamp: 1712235707
-message: ' release taxonomy weight fix'
+datestamp: 1712244725
+message: ' fix display documenti on views first level scuola'
