@@ -203,7 +203,7 @@ display:
           value:
             min: ''
             max: ''
-            value: 'now +1 day'
+            value: '-1 day'
             type: offset
           group: 1
           exposed: false
