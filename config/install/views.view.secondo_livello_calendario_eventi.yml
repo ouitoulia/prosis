@@ -334,7 +334,12 @@ display:
             value: "<h1 class=\"p-0 mb-2 fw-lighter\">Calendario eventi</h1>\r\n<p class=\"lead\">Il calendario scolastico</p>"
             format: bootstrap_italia_2
           tokenize: false
-      footer: {  }
+      footer:
+        area:
+          id: area
+          table: views
+          field: area
+          plugin_id: text
       display_extenders: {  }
     cache_metadata:
       max-age: -1
@@ -352,9 +357,228 @@ display:
     display_plugin: page
     position: 1
     display_options:
+      defaults:
+        footer: false
       display_description: 'Visualizza gli ultimi eventi'
+      footer:
+        area:
+          id: area
+          table: views
+          field: area
+          relationship: none
+          group_type: group
+          admin_label: ''
+          plugin_id: text
+          empty: true
+          content:
+            value: '<p><a class="btn btn-block btn-secondary" href="/archivio/eventi" title="Archivio eventi - [site:slogan] [site:name]">Consulta l''archivio degli eventi</a></p>'
+            format: bootstrap_italia_2
+          tokenize: false
       display_extenders: {  }
       path: novita/eventi
+    cache_metadata:
+      max-age: -1
+      contexts:
+        - 'languages:language_content'
+        - 'languages:language_interface'
+        - url
+        - url.query_args
+        - 'user.node_grants:view'
+        - user.permissions
+      tags: {  }
+  page_2:
+    id: page_2
+    display_title: 'Archivio Eventi'
+    display_plugin: page
+    position: 2
+    display_options:
+      title: 'Archivio eventi'
+      empty:
+        area:
+          id: area
+          table: views
+          field: area
+          relationship: none
+          group_type: group
+          admin_label: ''
+          plugin_id: text
+          empty: true
+          content:
+            value: 'Nessun evento archiviato in questa categoria'
+            format: bootstrap_italia_2
+          tokenize: false
+      filters:
+        status:
+          id: status
+          table: node_field_data
+          field: status
+          entity_type: node
+          entity_field: status
+          plugin_id: boolean
+          value: '1'
+          group: 1
+          expose:
+            operator: ''
+        type:
+          id: type
+          table: node_field_data
+          field: type
+          entity_type: node
+          entity_field: type
+          plugin_id: bundle
+          value:
+            evento: evento
+          group: 1
+        field_data_fine_value:
+          id: field_data_fine_value
+          table: node__field_data_fine
+          field: field_data_fine_value
+          relationship: none
+          group_type: group
+          admin_label: ''
+          plugin_id: datetime
+          operator: '<'
+          value:
+            min: ''
+            max: ''
+            value: now
+            type: offset
+          group: 1
+          exposed: false
+          expose:
+            operator_id: ''
+            label: ''
+            description: ''
+            use_operator: false
+            operator: ''
+            operator_limit_selection: false
+            operator_list: {  }
+            identifier: ''
+            required: false
+            remember: false
+            multiple: false
+            remember_roles:
+              authenticated: authenticated
+            min_placeholder: ''
+            max_placeholder: ''
+            placeholder: ''
+          is_grouped: false
+          group_info:
+            label: ''
+            description: ''
+            identifier: ''
+            optional: true
+            widget: select
+            multiple: false
+            remember: false
+            default_group: All
+            default_group_multiple: {  }
+            group_items: {  }
+        field_tipologia_evento_target_id:
+          id: field_tipologia_evento_target_id
+          table: node__field_tipologia_evento
+          field: field_tipologia_evento_target_id
+          relationship: none
+          group_type: group
+          admin_label: ''
+          plugin_id: taxonomy_index_tid
+          operator: or
+          value: {  }
+          group: 1
+          exposed: true
+          expose:
+            operator_id: field_tipologia_evento_target_id_op
+            label: 'Tipo di evento'
+            description: ''
+            use_operator: false
+            operator: field_tipologia_evento_target_id_op
+            operator_limit_selection: false
+            operator_list: {  }
+            identifier: field_tipologia_evento_target_id
+            required: false
+            remember: true
+            multiple: false
+            remember_roles:
+              anonymous: anonymous
+              authenticated: authenticated
+              ex_amministrativo: '0'
+              ex_collaboratore: '0'
+              ex_dirigente: '0'
+              ex_docente: '0'
+              ex_dsga: '0'
+              ex_tecnico: '0'
+              personale_docente: '0'
+              personale_non_docente: '0'
+              collaboratore: '0'
+              direttore_amministrativo_dsga_: '0'
+              personale_amministrativo: '0'
+              personale_tecnico: '0'
+              amministrazione_sito: '0'
+              amministratore: '0'
+              capo_redattore: '0'
+              redattore: '0'
+              dirigente_scolastico: '0'
+            reduce: false
+          is_grouped: false
+          group_info:
+            label: ''
+            description: ''
+            identifier: ''
+            optional: true
+            widget: select
+            multiple: false
+            remember: false
+            default_group: All
+            default_group_multiple: {  }
+            group_items: {  }
+          reduce_duplicates: false
+          vid: tipologia_eventi
+          type: select
+          hierarchy: false
+          limit: true
+          error_message: true
+      filter_groups:
+        operator: AND
+        groups:
+          1: AND
+      defaults:
+        empty: false
+        title: false
+        filters: false
+        filter_groups: false
+        header: false
+        footer: false
+      display_description: ''
+      header:
+        area:
+          id: area
+          table: views
+          field: area
+          relationship: none
+          group_type: group
+          admin_label: ''
+          plugin_id: text
+          empty: true
+          content:
+            value: '<p class="lead">L''archivio del calendario scolastico</p>'
+            format: bootstrap_italia_2
+          tokenize: false
+      footer:
+        area:
+          id: area
+          table: views
+          field: area
+          relationship: none
+          group_type: group
+          admin_label: ''
+          plugin_id: text
+          empty: true
+          content:
+            value: '<p><a class="btn btn-block btn-secondary" href="/novita/eventi" title="Eventi in programma - [site:slogan] [site:name]">Consulta gli eventi in programma e futuri</a></p>'
+            format: bootstrap_italia_2
+          tokenize: false
+      display_extenders: {  }
+      path: archivio/eventi
     cache_metadata:
       max-age: -1
       contexts:
