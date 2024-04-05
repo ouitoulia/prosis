@@ -12,8 +12,8 @@ dependencies:
   - ouitoulia:themethla
   - ouitoulia:prosopon
 
-# Information added by GitHub Action packaging script on 2024-04-04
+# Information added by GitHub Action packaging script on 2024-04-05
 version: '1.33.0'
 project: 'Prosis'
-datestamp: 1712244725
-message: ' fix display documenti on views first level scuola'
+datestamp: 1712300499
+message: ' fix version'
