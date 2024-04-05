@@ -1,0 +1,29 @@
+uuid: 2744b3b2-0894-47aa-92f3-868397f74f33
+langcode: it
+status: true
+dependencies:
+  config:
+    - views.view.secondo_livello_numeri_della_scuola
+  module:
+    - system
+    - views
+  theme:
+    - skenografia
+id: skenografia_views_block__secondo_liv_numeri_della_scuola2
+theme: skenografia
+region: after_content_full_width
+weight: 0
+provider: null
+plugin: 'views_block:secondo_livello_numeri_della_scuola-i_numeri_della_scuola'
+settings:
+  id: 'views_block:secondo_livello_numeri_della_scuola-i_numeri_della_scuola'
+  label: ''
+  label_display: '0'
+  provider: views
+  views_label: ''
+  items_per_page: none
+visibility:
+  request_path:
+    id: request_path
+    negate: false
+    pages: /scuola/presentazione

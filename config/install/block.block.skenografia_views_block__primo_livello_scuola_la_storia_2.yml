@@ -1,0 +1,29 @@
+uuid: 490f52e0-282e-466f-b2af-0f75aa5d0298
+langcode: it
+status: true
+dependencies:
+  config:
+    - views.view.primo_livello_scuola
+  module:
+    - system
+    - views
+  theme:
+    - skenografia
+id: skenografia_views_block__primo_livello_scuola_la_storia_2
+theme: skenografia
+region: after_content_full_width
+weight: 0
+provider: null
+plugin: 'views_block:primo_livello_scuola-la_storia'
+settings:
+  id: 'views_block:primo_livello_scuola-la_storia'
+  label: ''
+  label_display: '0'
+  provider: views
+  views_label: ''
+  items_per_page: none
+visibility:
+  request_path:
+    id: request_path
+    negate: false
+    pages: /scuola/presentazione
