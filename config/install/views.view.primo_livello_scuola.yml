@@ -648,7 +648,7 @@ display:
           plugin_id: text
           empty: true
           content:
-            value: "<h2 class=\"mb-3 fw-lighter\">I luoghi</h2>\r\n<p class=\"max-width-620 lead\">[site:slogan] [site:name]</p>\r\n          "
+            value: "<h2 class=\"mb-3 fw-lighter\">I luoghi</h2>\r\n<p class=\"max-width-620 lead\">I luoghi più importanti della nostra scuola</p>\r\n          "
             format: bootstrap_italia_2
           tokenize: false
       footer:
