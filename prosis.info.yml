@@ -13,7 +13,7 @@ dependencies:
   - ouitoulia:prosopon
 
 # Information added by GitHub Action packaging script on 2024-04-05
-version: '1.33.0'
+version: '1.33.1'
 project: 'Prosis'
-datestamp: 1712300499
-message: ' fix version'
+datestamp: 1712300929
+message: ' fix text in views.view.primo_livello_scuola'
