@@ -14,8 +14,8 @@ dependencies:
   - ouitoulia:themethla
   - ouitoulia:prosopon
 
-# Information added by GitHub Action packaging script on 2024-04-05
-version: '1.36.0'
+# Information added by GitHub Action packaging script on 2024-04-06
+version: '1.37.0'
 project: 'Prosis'
-datestamp: 1712350574
-message: ' add block to scuola/presentazione'
+datestamp: 1712411638
+message: ' update deps for frontpage'
