@@ -15,7 +15,7 @@ dependencies:
   - ouitoulia:prosopon
 
 # Information added by GitHub Action packaging script on 2024-04-06
-version: '1.37.0'
+version: '1.38.0'
 project: 'Prosis'
-datestamp: 1712411638
-message: ' update deps for frontpage'
+datestamp: 1712415373
+message: ' add views in frontpage'
