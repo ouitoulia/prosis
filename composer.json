@@ -18,12 +18,13 @@
   "minimum-stability": "dev",
   "prefer-stable": true,
   "require": {
-    "drupal/better_exposed_filters": "^6.0",
+    "drupal/better_exposed_filters": ">=6",
+    "drupal/empty_front_page": ">=1",
     "drupal/core-recommended": ">=10",
     "drupal/leaflet": ">=10.2",
     "drupal/menu_block": "^1.10",
     "ouitoulia/prosopon": "^4",
-    "ouitoulia/skenografia": ">=1.8.0",
+    "ouitoulia/skenografia": ">=1.23",
     "ouitoulia/themethla": ">=3.9"
   }
 }
