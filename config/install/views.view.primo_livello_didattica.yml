@@ -294,6 +294,40 @@ display:
       tags:
         - 'config:field.storage.node.field_grado_di_istruzione'
         - 'config:field.storage.node.field_struttura_didattica'
+  block_didattica:
+    id: block_didattica
+    display_title: 'Didattica Blocco'
+    display_plugin: block
+    position: 2
+    display_options:
+      defaults:
+        header: false
+      display_description: 'Questo blocco riusa la pagina Didattica in un blocco.'
+      header:
+        area:
+          id: area
+          table: views
+          field: area
+          relationship: none
+          group_type: group
+          admin_label: ''
+          plugin_id: text
+          empty: true
+          content:
+            value: "<h2 class=\"text-white mb-0 fw-lighter\">La didattica</h2>\r\n<p class=\"lead fw-bold\">la nostra offerta formativa</h2>"
+            format: bootstrap_italia_2
+          tokenize: false
+      display_extenders: {  }
+    cache_metadata:
+      max-age: -1
+      contexts:
+        - 'languages:language_content'
+        - 'languages:language_interface'
+        - 'user.node_grants:view'
+        - user.permissions
+      tags:
+        - 'config:field.storage.node.field_grado_di_istruzione'
+        - 'config:field.storage.node.field_struttura_didattica'
   page_1:
     id: page_1
     display_title: Didattica
@@ -317,7 +351,7 @@ display:
     id: progetti
     display_title: Progetti
     display_plugin: block
-    position: 2
+    position: 3
     display_options:
       title: 'I progetti delle classi'
       pager:
@@ -467,7 +501,7 @@ display:
     id: schede_didattiche
     display_title: 'Schede didattiche'
     display_plugin: block
-    position: 3
+    position: 4
     display_options:
       title: 'Le schede didattiche'
       pager:

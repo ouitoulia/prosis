@@ -1,0 +1,23 @@
+langcode: it
+status: true
+dependencies:
+  config:
+    - views.view.prima_pagina
+  module:
+    - views
+  theme:
+    - skenografia
+id: skenografia_views_block__prima_pagina_documenti
+theme: skenografia
+region: home_second_row_full_width
+weight: 0
+provider: null
+plugin: 'views_block:prima_pagina-documenti'
+settings:
+  id: 'views_block:prima_pagina-documenti'
+  label: ''
+  label_display: visible
+  provider: views
+  views_label: ''
+  items_per_page: none
+visibility: {  }

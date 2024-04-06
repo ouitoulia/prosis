@@ -1,0 +1,23 @@
+langcode: it
+status: true
+dependencies:
+  config:
+    - views.view.primo_livello_didattica
+  module:
+    - views
+  theme:
+    - skenografia
+id: skenografia_views_block__primo_livello_didattica_block_didattica
+theme: skenografia
+region: home_last_row_full_width
+weight: 0
+provider: null
+plugin: 'views_block:primo_livello_didattica-block_didattica'
+settings:
+  id: 'views_block:primo_livello_didattica-block_didattica'
+  label: ''
+  label_display: '0'
+  provider: views
+  views_label: ''
+  items_per_page: none
+visibility: {  }
