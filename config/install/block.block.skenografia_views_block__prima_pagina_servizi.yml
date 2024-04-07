@@ -1,0 +1,23 @@
+langcode: it
+status: true
+dependencies:
+  config:
+    - views.view.prima_pagina
+  module:
+    - views
+  theme:
+    - skenografia
+id: skenografia_views_block__prima_pagina_servizi
+theme: skenografia
+region: home_second_row_full_width
+weight: 0
+provider: null
+plugin: 'views_block:prima_pagina-servizi'
+settings:
+  id: 'views_block:prima_pagina-servizi'
+  label: ''
+  label_display: '0'
+  provider: views
+  views_label: ''
+  items_per_page: none
+visibility: {  }

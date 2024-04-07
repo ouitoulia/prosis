@@ -8,6 +8,7 @@ dependencies:
     - node.type.article
     - node.type.circolare
     - node.type.documento
+    - node.type.servizio
   module:
     - node
     - user
@@ -334,7 +335,22 @@ display:
         title: false
         filters: false
         filter_groups: false
+        footer: false
       display_description: "Le ultime circolari pubblicate con l'opzione Promosso alla prima pagina"
+      footer:
+        area:
+          id: area
+          table: views
+          field: area
+          relationship: none
+          group_type: group
+          admin_label: ''
+          plugin_id: text
+          empty: false
+          content:
+            value: '<p class="text-center"><a title="Leggi tutte le circolari" class="text-underline" href="/novita/le-circolari" data-focus-mouse="false"><strong>Leggi tutte le circolari</strong></a></p>'
+            format: bootstrap_italia_2
+          tokenize: false
       display_extenders: {  }
       block_hide_empty: true
     cache_metadata:
@@ -468,7 +484,22 @@ display:
         sorts: false
         filters: false
         filter_groups: false
+        footer: false
       display_description: 'Gli ultimi docuimenti aggiornati'
+      footer:
+        area:
+          id: area
+          table: views
+          field: area
+          relationship: none
+          group_type: group
+          admin_label: ''
+          plugin_id: text
+          empty: false
+          content:
+            value: '<p class="text-center"><a title="Vedi tutti i documenti" class="text-underline" href="/scuola/le-carte-della-scuola" data-focus-mouse="false"><strong>Vedi tutti i documenti</strong></a></p>'
+            format: bootstrap_italia_2
+          tokenize: false
       display_extenders: {  }
       block_hide_empty: true
     cache_metadata:
@@ -500,7 +531,188 @@ display:
       defaults:
         style: false
         row: false
+        footer: false
       display_description: "Le ultime notizie pubblicate con l'opzione Promosso alla prima pagina"
+      footer:
+        area:
+          id: area
+          table: views
+          field: area
+          relationship: none
+          group_type: group
+          admin_label: ''
+          plugin_id: text
+          empty: false
+          content:
+            value: '<p class="text-center"><a title="Leggi tutte le notizie" class="text-underline" href="/novita/le-notizie" data-focus-mouse="false"><strong>Leggi tutte le notizie</strong></a></p>'
+            format: bootstrap_italia_2
+          tokenize: false
+      display_extenders: {  }
+      block_hide_empty: true
+    cache_metadata:
+      max-age: -1
+      contexts:
+        - 'languages:language_content'
+        - 'languages:language_interface'
+        - url.query_args
+        - 'user.node_grants:view'
+        - user.permissions
+      tags: {  }
+  servizi:
+    id: servizi
+    display_title: Servizi
+    display_plugin: block
+    position: 4
+    display_options:
+      title: Servizi
+      pager:
+        type: full
+        options:
+          offset: 0
+          items_per_page: 6
+          total_pages: 5
+          id: 0
+          tags:
+            next: 'Next ›'
+            previous: '‹ Precedente'
+            first: '« Prima'
+            last: 'Ultima »'
+          expose:
+            items_per_page: false
+            items_per_page_label: 'Voci per pagina'
+            items_per_page_options: '5, 10, 25, 50'
+            items_per_page_options_all: false
+            items_per_page_options_all_label: '- Tutto -'
+            offset: false
+            offset_label: Scostamento
+          quantity: 4
+      sorts:
+        sticky:
+          id: sticky
+          table: node_field_data
+          field: sticky
+          relationship: none
+          group_type: group
+          admin_label: ''
+          entity_type: node
+          entity_field: sticky
+          plugin_id: standard
+          order: DESC
+          expose:
+            label: ''
+            field_identifier: ''
+          exposed: false
+        changed:
+          id: changed
+          table: node_field_data
+          field: changed
+          relationship: none
+          group_type: group
+          admin_label: ''
+          entity_type: node
+          entity_field: changed
+          plugin_id: date
+          order: DESC
+          expose:
+            label: ''
+            field_identifier: ''
+          exposed: false
+          granularity: second
+      filters:
+        status:
+          id: status
+          table: node_field_data
+          field: status
+          entity_type: node
+          entity_field: status
+          plugin_id: boolean
+          value: '1'
+          group: 1
+          expose:
+            operator: ''
+        type:
+          id: type
+          table: node_field_data
+          field: type
+          relationship: none
+          group_type: group
+          admin_label: ''
+          entity_type: node
+          entity_field: type
+          plugin_id: bundle
+          operator: in
+          value:
+            servizio: servizio
+          group: 1
+          exposed: false
+          expose:
+            operator_id: ''
+            label: ''
+            description: ''
+            use_operator: false
+            operator: ''
+            operator_limit_selection: false
+            operator_list: {  }
+            identifier: ''
+            required: false
+            remember: false
+            multiple: false
+            remember_roles:
+              authenticated: authenticated
+            reduce: false
+          is_grouped: false
+          group_info:
+            label: ''
+            description: ''
+            identifier: ''
+            optional: true
+            widget: select
+            multiple: false
+            remember: false
+            default_group: All
+            default_group_multiple: {  }
+            group_items: {  }
+      filter_groups:
+        operator: AND
+        groups:
+          1: AND
+      defaults:
+        title: false
+        pager: false
+        sorts: false
+        filters: false
+        filter_groups: false
+        header: false
+        footer: false
+      display_description: 'Gli ultimi servizi aggiornati'
+      header:
+        area:
+          id: area
+          table: views
+          field: area
+          relationship: none
+          group_type: group
+          admin_label: ''
+          plugin_id: text
+          empty: false
+          content:
+            value: "<h2 class=\"pb-3\">Servizi</h2>\r\n<p class=\"lead\">I servizi offerti dalla scuola dedicati a tutti i genitori, studenti, personale ATA e docenti</p>\r\n                "
+            format: bootstrap_italia_2
+          tokenize: false
+      footer:
+        area:
+          id: area
+          table: views
+          field: area
+          relationship: none
+          group_type: group
+          admin_label: ''
+          plugin_id: text
+          empty: false
+          content:
+            value: '<p class="text-center"><a title="Vedi tutti i servizi" class="text-underline" href="/servizi" data-focus-mouse="false"><strong>Vedi tutti i servizi</strong></a></p>'
+            format: bootstrap_italia_2
+          tokenize: false
       display_extenders: {  }
       block_hide_empty: true
     cache_metadata:
