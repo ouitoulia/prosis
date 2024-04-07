@@ -14,8 +14,8 @@ dependencies:
   - ouitoulia:themethla
   - ouitoulia:prosopon
 
-# Information added by GitHub Action packaging script on 2024-04-06
-version: '1.38.0'
+# Information added by GitHub Action packaging script on 2024-04-07
+version: '1.39.0'
 project: 'Prosis'
-datestamp: 1712415373
-message: ' add views in frontpage'
+datestamp: 1712521469
+message: ' add block servizi in home page'
