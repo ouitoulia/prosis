@@ -22,6 +22,16 @@ $ drush -y pm:install prosis
 ```
 Le dipendenze verranno installate automaticamente.
 
+## Issue
+Le issue vengono gestite nel repository principale del progetto:
+https://github.com/ouitoulia/diagraphe/issues
+
+## Contributori, dipendenze e altre informazioni
+Per contribuire al progetto effettua un Fork, aggiungi le tue modifiche e poi fai una Pull Request.
+
+- [Contributori](https://github.com/ouitoulia/prosis/graphs/contributors)
+- [Elenco delle dipendenze](https://github.com/ouitoulia/prosis/network/dependencies)
+
 ## License
 
 Copyright (C) 2023 https://github.com/ouitoulia
