@@ -14,8 +14,8 @@ dependencies:
   - ouitoulia:themethla
   - ouitoulia:prosopon
 
-# Information added by GitHub Action packaging script on 2024-04-13
-version: '1.41.0'
+# Information added by GitHub Action packaging script on 2024-04-14
+version: '1.41.1'
 project: 'Prosis'
-datestamp: 1713022579
-message: ' add view finanziamenti ouitoulia/diagraphe#15'
+datestamp: 1713100299
+message: ' fix empty result on finanziamenti views ouitoulia/diagraphe#15'
