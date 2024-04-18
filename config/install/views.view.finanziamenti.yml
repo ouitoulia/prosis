@@ -4,16 +4,7 @@ dependencies:
   config:
     - core.entity_view_mode.node.card_scuola_big_image
     - node.type.finanziamento
-    - taxonomy.vocabulary.tipologia_progetti
-  content:
-    - 'taxonomy_term:tipologia_progetti:074a0543-42f5-4914-bc4e-061399649bfd'
-    - 'taxonomy_term:tipologia_progetti:27da6ba0-528a-4c41-a093-494e1c102841'
-    - 'taxonomy_term:tipologia_progetti:3af9feee-59f8-4a6a-bd85-03a576024db0'
-    - 'taxonomy_term:tipologia_progetti:5b9f2fbf-c3b7-4975-9a31-cddee7e17c20'
-    - 'taxonomy_term:tipologia_progetti:8cf4d65f-cc6a-4115-9fa1-49a1771e52c7'
-    - 'taxonomy_term:tipologia_progetti:99e849bb-41d8-4c52-bb87-414bf7c29db2'
-    - 'taxonomy_term:tipologia_progetti:ddcef173-3de1-4320-beb6-6c15526e8dd0'
-    - 'taxonomy_term:tipologia_progetti:f7d6a96d-e210-4a13-be4a-cd23ec4f5133'
+    - taxonomy.vocabulary.tipologia_finanziamenti
   module:
     - better_exposed_filters
     - node
@@ -107,7 +98,7 @@ display:
           reset_button: false
           reset_button_label: Ripristina
           exposed_sorts_label: 'Ordina per'
-          expose_sort_order: true
+          expose_sort_order: false
           sort_asc_label: Asc
           sort_desc_label: Disc
           text_input_required: 'Seleziona qualsiasi filtro e clicca su Applica per visualizzare i risultati'
@@ -123,8 +114,18 @@ display:
               secondary_label: 'Opzioni avanzate'
               secondary_open: false
               reset_button_always_show: false
+            sort:
+              plugin_id: default
+              advanced:
+                combine: false
+                combine_rewrite: ''
+                reset: false
+                reset_label: ''
+                collapsible: false
+                collapsible_label: 'Sort options'
+                is_secondary: false
             filter:
-              field_tipologia_progetto_target_id:
+              field_tipologia_finanziamento_target_id:
                 plugin_id: bef
                 advanced:
                   sort_options: false
@@ -169,8 +170,8 @@ display:
           plugin_id: date
           order: DESC
           expose:
-            label: ''
-            field_identifier: ''
+            label: 'Creato il'
+            field_identifier: created
           exposed: false
           granularity: second
       arguments: {  }
@@ -195,41 +196,33 @@ display:
           plugin_id: bundle
           value:
             finanziamento: finanziamento
-        field_tipologia_progetto_target_id:
-          id: field_tipologia_progetto_target_id
-          table: node__field_tipologia_progetto
-          field: field_tipologia_progetto_target_id
+        field_tipologia_finanziamento_target_id:
+          id: field_tipologia_finanziamento_target_id
+          table: node__field_tipologia_finanziamento
+          field: field_tipologia_finanziamento_target_id
           relationship: none
           group_type: group
           admin_label: ''
           plugin_id: taxonomy_index_tid
           operator: or
-          value:
-            1101: 1101
-            1111: 1111
-            1112: 1112
-            1102: 1102
-            1113: 1113
-            1103: 1103
-            1104: 1104
-            1110: 1110
+          value: {  }
           group: 1
           exposed: true
           expose:
-            operator_id: field_tipologia_progetto_target_id_op
-            label: Tipologia
+            operator_id: field_tipologia_finanziamento_target_id_op
+            label: 'Tipologia finanziamento'
             description: ''
             use_operator: false
-            operator: field_tipologia_progetto_target_id_op
+            operator: field_tipologia_finanziamento_target_id_op
             operator_limit_selection: false
             operator_list: {  }
-            identifier: field_tipologia_progetto_target_id
+            identifier: field_tipologia_finanziamento_target_id
             required: false
-            remember: true
+            remember: false
             multiple: false
             remember_roles:
-              anonymous: anonymous
               authenticated: authenticated
+              anonymous: '0'
               ex_amministrativo: '0'
               ex_collaboratore: '0'
               ex_dirigente: '0'
@@ -247,7 +240,7 @@ display:
               capo_redattore: '0'
               redattore: '0'
               dirigente_scolastico: '0'
-            reduce: true
+            reduce: false
           is_grouped: false
           group_info:
             label: ''
@@ -260,14 +253,19 @@ display:
             default_group: All
             default_group_multiple: {  }
             group_items: {  }
-          reduce_duplicates: true
-          vid: tipologia_progetti
+          reduce_duplicates: false
+          vid: tipologia_finanziamenti
           type: select
           hierarchy: false
           limit: true
-          error_message: false
+          error_message: true
       style:
         type: default
+        options:
+          grouping: {  }
+          row_class: ''
+          default_row_class: true
+          uses_fields: false
       row:
         type: 'entity:node'
         options:

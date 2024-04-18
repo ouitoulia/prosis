@@ -529,6 +529,7 @@ display:
           replica: false
           query_tags: {  }
       relationships: {  }
+      css_class: mb-5
       use_ajax: true
       header:
         area:
