@@ -76,26 +76,10 @@ display:
           separator: ', '
           field_api_classes: false
       pager:
-        type: full
+        type: some
         options:
           offset: 0
           items_per_page: 3
-          total_pages: 5
-          id: 0
-          tags:
-            next: 'Next ›'
-            previous: '‹ Precedente'
-            first: '« Prima'
-            last: 'Ultima »'
-          expose:
-            items_per_page: false
-            items_per_page_label: 'Voci per pagina'
-            items_per_page_options: '5, 10, 25, 50'
-            items_per_page_options_all: false
-            items_per_page_options_all_label: '- Tutto -'
-            offset: false
-            offset_label: Scostamento
-          quantity: 4
       exposed_form:
         type: basic
         options:
@@ -222,7 +206,6 @@ display:
       contexts:
         - 'languages:language_content'
         - 'languages:language_interface'
-        - url.query_args
         - 'user.node_grants:view'
         - user.permissions
       tags: {  }
@@ -358,7 +341,6 @@ display:
       contexts:
         - 'languages:language_content'
         - 'languages:language_interface'
-        - url.query_args
         - 'user.node_grants:view'
         - user.permissions
       tags: {  }
@@ -370,26 +352,10 @@ display:
     display_options:
       title: 'Documenti aggiornati di recente'
       pager:
-        type: full
+        type: some
         options:
           offset: 0
           items_per_page: 2
-          total_pages: 4
-          id: 0
-          tags:
-            next: 'Next ›'
-            previous: '‹ Precedente'
-            first: '« Prima'
-            last: 'Ultima »'
-          expose:
-            items_per_page: false
-            items_per_page_label: 'Voci per pagina'
-            items_per_page_options: '5, 10, 25, 50'
-            items_per_page_options_all: false
-            items_per_page_options_all_label: '- Tutto -'
-            offset: false
-            offset_label: Scostamento
-          quantity: 4
       sorts:
         changed:
           id: changed
@@ -507,7 +473,6 @@ display:
       contexts:
         - 'languages:language_content'
         - 'languages:language_interface'
-        - url.query_args
         - 'user.node_grants:view'
         - user.permissions
       tags: {  }
@@ -554,7 +519,6 @@ display:
       contexts:
         - 'languages:language_content'
         - 'languages:language_interface'
-        - url.query_args
         - 'user.node_grants:view'
         - user.permissions
       tags: {  }
@@ -566,26 +530,10 @@ display:
     display_options:
       title: Servizi
       pager:
-        type: full
+        type: some
         options:
           offset: 0
           items_per_page: 6
-          total_pages: 5
-          id: 0
-          tags:
-            next: 'Next ›'
-            previous: '‹ Precedente'
-            first: '« Prima'
-            last: 'Ultima »'
-          expose:
-            items_per_page: false
-            items_per_page_label: 'Voci per pagina'
-            items_per_page_options: '5, 10, 25, 50'
-            items_per_page_options_all: false
-            items_per_page_options_all_label: '- Tutto -'
-            offset: false
-            offset_label: Scostamento
-          quantity: 4
       sorts:
         sticky:
           id: sticky
@@ -720,7 +668,6 @@ display:
       contexts:
         - 'languages:language_content'
         - 'languages:language_interface'
-        - url.query_args
         - 'user.node_grants:view'
         - user.permissions
       tags: {  }
