@@ -14,8 +14,8 @@ dependencies:
   - ouitoulia:themethla
   - ouitoulia:prosopon
 
-# Information added by GitHub Action packaging script on 2024-04-20
-version: '1.44.0'
+# Information added by GitHub Action packaging script on 2024-04-26
+version: '1.45.0'
 project: 'Prosis'
-datestamp: 1713626013
-message: ' remove home page paginator ouitoulia/diagraphe#10'
+datestamp: 1714146046
+message: ' up to skenografia:^2'
