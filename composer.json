@@ -24,7 +24,7 @@
     "drupal/leaflet": ">=10.2",
     "drupal/menu_block": "^1.10",
     "ouitoulia/prosopon": "^4",
-    "ouitoulia/skenografia": ">=1.23",
+    "ouitoulia/skenografia": ">=2",
     "ouitoulia/themethla": ">=3.9"
   }
 }
