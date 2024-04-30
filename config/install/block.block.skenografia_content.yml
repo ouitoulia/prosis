@@ -8,7 +8,7 @@ dependencies:
 id: skenografia_content
 theme: skenografia
 region: content
-weight: -7
+weight: -30
 provider: null
 plugin: system_main_block
 settings:
