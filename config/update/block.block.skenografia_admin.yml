@@ -10,7 +10,7 @@ dependencies:
 id: skenografia_admin
 theme: skenografia
 region: sidebar_first
-weight: 1
+weight: -24
 provider: null
 plugin: 'system_menu_block:admin'
 settings:

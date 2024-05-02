@@ -10,7 +10,7 @@ dependencies:
 id: skenografia_tools
 theme: skenografia
 region: sidebar_first
-weight: 0
+weight: -25
 provider: null
 plugin: 'system_menu_block:tools'
 settings:
