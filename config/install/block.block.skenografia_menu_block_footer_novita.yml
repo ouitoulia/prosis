@@ -26,5 +26,7 @@ settings:
   depth: 0
   expand_all_items: false
   parent: 'main:menu_link_content:dd7d6ff9-825c-4447-9496-94379ed7d868'
+  render_parent: false
   suggestion: block_footer_main
+  hide_on_nonactive: false
 visibility: {  }

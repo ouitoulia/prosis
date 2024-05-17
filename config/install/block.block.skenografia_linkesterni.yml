@@ -26,5 +26,7 @@ settings:
   depth: 0
   expand_all_items: false
   parent: 'link-esterni:'
+  render_parent: false
   suggestion: block_footer_main
+  hide_on_nonactive: false
 visibility: {  }
