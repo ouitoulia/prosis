@@ -14,8 +14,8 @@ dependencies:
   - ouitoulia:themethla
   - ouitoulia:prosopon
 
-# Information added by GitHub Action packaging script on 2024-05-06
-version: '1.47.0'
+# Information added by GitHub Action packaging script on 2024-05-17
+version: '1.48.0'
 project: 'Prosis'
-datestamp: 1715026980
-message: ' fix ouitoulia/diagraphe#28'
+datestamp: 1715960835
+message: ' update confing'
