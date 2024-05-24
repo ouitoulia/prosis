@@ -15,7 +15,7 @@ dependencies:
   - ouitoulia:prosopon
 
 # Information added by GitHub Action packaging script on 2024-05-24
-version: '1.50.0'
+version: '1.51.0'
 project: 'Prosis'
-datestamp: 1716563795
-message: ' ouitoulia/diagraphe#15'
+datestamp: 1716565598
+message: ' add correlati finanziamento ouitoulia/diagraphe#15'
