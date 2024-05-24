@@ -241,7 +241,7 @@ display:
           type: select
           hierarchy: false
           limit: true
-          error_message: true
+          error_message: false
       style:
         type: default
         options:
