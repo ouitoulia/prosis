@@ -15,7 +15,7 @@ dependencies:
   - ouitoulia:prosopon
 
 # Information added by GitHub Action packaging script on 2024-06-03
-version: '1.52.0'
+version: '1.53.0'
 project: 'Prosis'
-datestamp: 1717419302
-message: ' add services login buttons in login form'
+datestamp: 1717427358
+message: ' add le parole della scuola views'
