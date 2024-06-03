@@ -1,0 +1,23 @@
+langcode: it
+status: true
+dependencies:
+  config:
+    - views.view.accedi_ai_servizi
+  module:
+    - views
+  theme:
+    - skenografia
+id: skenografia_views_block__accedi_ai_servizi_service_online_access
+theme: skenografia
+region: login_first
+weight: 0
+provider: null
+plugin: 'views_block:accedi_ai_servizi-service_online_access'
+settings:
+  id: 'views_block:accedi_ai_servizi-service_online_access'
+  label: ''
+  label_display: '0'
+  provider: views
+  views_label: ''
+  items_per_page: none
+visibility: {  }
