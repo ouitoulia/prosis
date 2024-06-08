@@ -14,8 +14,8 @@ dependencies:
   - ouitoulia:themethla
   - ouitoulia:prosopon
 
-# Information added by GitHub Action packaging script on 2024-06-03
-version: '1.53.0'
+# Information added by GitHub Action packaging script on 2024-06-08
+version: '1.53.1'
 project: 'Prosis'
-datestamp: 1717427358
-message: ' add le parole della scuola views'
+datestamp: 1717859887
+message: ' le parole della scuola in ordine alfabetico'
