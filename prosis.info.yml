@@ -15,7 +15,7 @@ dependencies:
   - ouitoulia:prosopon
 
 # Information added by GitHub Action packaging script on 2024-06-25
-version: '2.0.0'
+version: '2.0.1'
 project: 'Prosis'
-datestamp: 1719320123
-message: ' drupal 10.3 update'
+datestamp: 1719321259
+message: ' up deps'
