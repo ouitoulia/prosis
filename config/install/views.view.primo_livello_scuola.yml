@@ -259,6 +259,7 @@ display:
             offset: false
             offset_label: Scostamento
           quantity: 4
+          pagination_heading_level: h4
       sorts:
         sticky:
           id: sticky

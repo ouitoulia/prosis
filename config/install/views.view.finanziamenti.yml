@@ -91,6 +91,7 @@ display:
             items_per_page_options_all_label: '- Tutto -'
             offset: false
             offset_label: Scostamento
+          pagination_heading_level: h4
       exposed_form:
         type: bef
         options:

@@ -236,6 +236,7 @@ display:
             offset: false
             offset_label: Scostamento
           quantity: 6
+          pagination_heading_level: h4
       exposed_form:
         type: basic
         options:

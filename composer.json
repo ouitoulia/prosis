@@ -1,6 +1,6 @@
 {
   "name": "ouitoulia/prosis",
-  "description": "Prósis - Vista (Prospetto) è un modulo drupal che gestisce le viste e i blocchi usate per presentare i contenuti dell'architettura  dell'informazione delle scuole.",
+  "description": "Prósis - Vista (Prospetto) è un modulo drupal che gestisce le viste e i blocchi usati per presentare i contenuti dell'architettura  dell'informazione delle scuole.",
   "type": "drupal-module",
   "license": "AGPL-3.0-only",
   "homepage": "https://github.com/ouitoulia/themethla",
@@ -20,7 +20,7 @@
   "require": {
     "drupal/better_exposed_filters": ">=6",
     "drupal/empty_front_page": ">=1",
-    "drupal/core-recommended": ">=10",
+    "drupal/core-recommended": ">=10.3",
     "drupal/leaflet": ">=10.2",
     "drupal/menu_block": "^1.10",
     "ouitoulia/prosopon": "^4",

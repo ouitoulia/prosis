@@ -159,6 +159,7 @@ display:
             items_per_page_options_all_label: '- Tutto -'
             offset: false
             offset_label: Scostamento
+          pagination_heading_level: h4
       exposed_form:
         type: basic
         options:
@@ -476,6 +477,7 @@ display:
             offset: false
             offset_label: Scostamento
           quantity: 4
+          pagination_heading_level: h4
       filters:
         status:
           id: status
@@ -753,6 +755,7 @@ display:
             offset: false
             offset_label: Scostamento
           quantity: 4
+          pagination_heading_level: h4
       defaults:
         pager: false
         use_more: true
@@ -930,6 +933,7 @@ display:
             offset: false
             offset_label: Scostamento
           quantity: 4
+          pagination_heading_level: h4
       sorts:
         field_struttura_didattica_target_id:
           id: field_struttura_didattica_target_id
@@ -1098,6 +1102,7 @@ display:
             offset: false
             offset_label: Scostamento
           quantity: 4
+          pagination_heading_level: h4
       filters:
         status:
           id: status
