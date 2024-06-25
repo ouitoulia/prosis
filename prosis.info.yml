@@ -14,8 +14,8 @@ dependencies:
   - ouitoulia:themethla
   - ouitoulia:prosopon
 
-# Information added by GitHub Action packaging script on 2024-06-08
-version: '1.53.1'
+# Information added by GitHub Action packaging script on 2024-06-25
+version: '2.0.0'
 project: 'Prosis'
-datestamp: 1717859887
-message: ' le parole della scuola in ordine alfabetico'
+datestamp: 1719320123
+message: ' drupal 10.3 update'
