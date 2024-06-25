@@ -25,6 +25,6 @@
     "drupal/menu_block": "^1.10",
     "ouitoulia/prosopon": "^4",
     "ouitoulia/skenografia": ">=2",
-    "ouitoulia/themethla": ">=3.9"
+    "ouitoulia/themethla": ">=4"
   }
 }
