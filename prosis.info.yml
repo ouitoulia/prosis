@@ -14,8 +14,8 @@ dependencies:
   - ouitoulia:themethla
   - ouitoulia:prosopon
 
-# Information added by GitHub Action packaging script on 2024-06-25
-version: '2.0.2'
+# Information added by GitHub Action packaging script on 2024-06-27
+version: '2.0.3'
 project: 'Prosis'
-datestamp: 1719333779
-message: ' up deps'
+datestamp: 1719501894
+message: ' italia/design-scuole-pagine-statiche/pull/75'
