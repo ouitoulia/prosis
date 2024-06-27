@@ -15,7 +15,7 @@ provider: null
 plugin: 'menu_block:link-esterni'
 settings:
   id: 'menu_block:link-esterni'
-  label: 'Link esterni'
+  label: 'Collegamenti esterni'
   label_display: visible
   provider: menu_block
   follow: false
