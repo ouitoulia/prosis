@@ -128,6 +128,7 @@ display:
                     filter_rewrite_values: ''
                   collapsible: false
                   is_secondary: false
+                  hide_label: false
               field_tipologia_progetto_target_id:
                 plugin_id: bef
                 advanced:
@@ -136,6 +137,7 @@ display:
                     filter_rewrite_values: ''
                   collapsible: false
                   is_secondary: false
+                  hide_label: false
                 select_all_none: false
                 select_all_none_nested: false
                 display_inline: false
