@@ -115,6 +115,7 @@ display:
               secondary_label: 'Opzioni avanzate'
               secondary_open: false
               reset_button_always_show: false
+              autosubmit_textfield_minimum_length: 3
             sort:
               plugin_id: default
               advanced:

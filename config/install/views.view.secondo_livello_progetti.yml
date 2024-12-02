@@ -119,6 +119,7 @@ display:
               secondary_label: 'Opzioni avanzate'
               secondary_open: false
               reset_button_always_show: false
+              autosubmit_textfield_minimum_length: 3
             filter:
               field_anno_scolastico_target_id:
                 plugin_id: default

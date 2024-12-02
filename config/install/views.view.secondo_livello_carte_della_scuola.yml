@@ -585,6 +585,7 @@ display:
               secondary_label: 'Opzioni avanzate'
               secondary_open: false
               reset_button_always_show: false
+              autosubmit_textfield_minimum_length: 3
             filter:
               field_tipologia_documento_target_id_1:
                 plugin_id: bef
