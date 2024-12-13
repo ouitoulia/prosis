@@ -1,0 +1,32 @@
+langcode: it
+status: true
+dependencies:
+  config:
+    - system.menu.navigazione-secondaria
+  module:
+    - menu_block
+  theme:
+    - skenografia
+id: skenografia_navigazionesecondaria
+theme: skenografia
+region: header_nav
+weight: 0
+provider: null
+plugin: 'menu_block:navigazione-secondaria'
+settings:
+  id: 'menu_block:navigazione-secondaria'
+  label: 'Navigazione secondaria'
+  label_display: '0'
+  provider: menu_block
+  follow: false
+  follow_parent: child
+  label_link: false
+  label_type: block
+  level: 1
+  depth: 0
+  expand_all_items: true
+  parent: 'navigazione-secondaria:'
+  render_parent: false
+  suggestion: navigazione_secondaria
+  hide_on_nonactive: false
+visibility: {  }
