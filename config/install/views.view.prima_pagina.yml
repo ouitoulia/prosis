@@ -10,6 +10,7 @@ dependencies:
     - node.type.documento
     - node.type.servizio
   module:
+    - datetime
     - node
     - user
 id: prima_pagina
@@ -427,6 +428,51 @@ display:
             default_group: All
             default_group_multiple: {  }
             group_items: {  }
+        field_data_oblio_value:
+          id: field_data_oblio_value
+          table: node__field_data_oblio
+          field: field_data_oblio_value
+          relationship: none
+          group_type: group
+          admin_label: ''
+          plugin_id: datetime
+          operator: '>='
+          value:
+            min: ''
+            max: ''
+            value: now
+            type: offset
+          group: 1
+          exposed: false
+          expose:
+            operator_id: ''
+            label: ''
+            description: ''
+            use_operator: false
+            operator: ''
+            operator_limit_selection: false
+            operator_list: {  }
+            identifier: ''
+            required: false
+            remember: false
+            multiple: false
+            remember_roles:
+              authenticated: authenticated
+            min_placeholder: ''
+            max_placeholder: ''
+            placeholder: ''
+          is_grouped: false
+          group_info:
+            label: ''
+            description: ''
+            identifier: ''
+            optional: true
+            widget: select
+            multiple: false
+            remember: false
+            default_group: All
+            default_group_multiple: {  }
+            group_items: {  }
       filter_groups:
         operator: AND
         groups:
@@ -644,7 +690,7 @@ display:
           plugin_id: text
           empty: false
           content:
-            value: "<h2 class=\"pb-3\">Servizi</h2>\r\n<p class=\"lead\">I servizi offerti dalla scuola dedicati a tutti i genitori, studenti, personale ATA e docenti</p>\r\n                "
+            value: "<h2 class=\"pb-3\">Servizi</h2>\r\n<p class=\"lead\">I servizi offerti dalla scuola dedicati a tutti i genitori, studenti, personale ATA e docenti</p>\r\n"
             format: bootstrap_italia_2
           tokenize: false
       footer:
