@@ -14,8 +14,8 @@ dependencies:
   - ouitoulia:themethla
   - ouitoulia:prosopon
 
-# Information added by GitHub Action packaging script on 2024-12-13
-version: '2.3.0'
+# Information added by GitHub Action packaging script on 2024-12-31
+version: '2.4.0'
 project: 'Prosis'
-datestamp: 1734132884
-message: ' aggiunto opzionale blocco navigazione secondaria'
+datestamp: 1735652408
+message: ' fix rimossi dai risultati i documenti che hanno raggiunto la data di oblio'
