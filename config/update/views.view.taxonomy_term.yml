@@ -26,6 +26,7 @@ display:
         type: full
         options:
           offset: 0
+          pagination_heading_level: h2
           items_per_page: 12
           total_pages: 0
           id: 0
@@ -43,7 +44,6 @@ display:
             offset: false
             offset_label: Scostamento
           quantity: 4
-          pagination_heading_level: h4
       exposed_form:
         type: basic
         options:
@@ -232,6 +232,7 @@ display:
           replica: false
           query_tags: {  }
       relationships: {  }
+      use_ajax: true
       link_display: page_1
       link_url: ''
       header:
