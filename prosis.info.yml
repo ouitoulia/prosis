@@ -14,8 +14,8 @@ dependencies:
   - ouitoulia:themethla
   - ouitoulia:prosopon
 
-# Information added by GitHub Action packaging script on 2025-01-11
-version: '2.5.0'
+# Information added by GitHub Action packaging script on 2025-01-20
+version: '2.6.0'
 project: 'Prosis'
-datestamp: 1736604359
-message: ' fix rimossi dai risultati i documenti che hanno raggiunto la data di oblio'
+datestamp: 1737385443
+message: ' fix heading level and enable ajax'
