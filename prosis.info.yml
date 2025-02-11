@@ -14,8 +14,8 @@ dependencies:
   - ouitoulia:themethla
   - ouitoulia:prosopon
 
-# Information added by GitHub Action packaging script on 2025-01-20
-version: '2.6.0'
+# Information added by GitHub Action packaging script on 2025-02-11
+version: '2.7.0'
 project: 'Prosis'
-datestamp: 1737385443
-message: ' fix heading level and enable ajax'
+datestamp: 1739249267
+message: ' update persona views.view.correlati_persona.yml'
