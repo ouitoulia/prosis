@@ -15,7 +15,7 @@ dependencies:
   - ouitoulia:prosopon
 
 # Information added by GitHub Action packaging script on 2025-02-11
-version: '2.7.1'
+version: '2.7.2'
 project: 'Prosis'
-datestamp: 1739249468
-message: ' fix item_per_page'
+datestamp: 1739251307
+message: ' remove metadata element from view'
