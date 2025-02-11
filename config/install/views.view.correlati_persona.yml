@@ -1018,7 +1018,7 @@ display:
           exclude: false
           alter:
             alter_text: true
-            text: "{% include '@bi-bcl/list/list-item.html.twig' with {\r\n  list_url: view_node,\r\n  list_text: title,\r\n  list_metadata: field_luoghi\r\n} %}"
+            text: "{% include '@bi-bcl/list/list-item.html.twig' with {\r\n  list_url: view_node,\r\n  list_text: title\r\n} %}"
             make_link: false
             path: ''
             absolute: false
