@@ -15,7 +15,7 @@ dependencies:
   - ouitoulia:prosopon
 
 # Information added by GitHub Action packaging script on 2025-02-11
-version: '2.7.2'
+version: '2.8.0'
 project: 'Prosis'
-datestamp: 1739251307
-message: ' remove metadata element from view'
+datestamp: 1739253045
+message: ' fix ordinamento per peso della tassonomia'
