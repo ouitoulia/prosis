@@ -14,8 +14,8 @@ dependencies:
   - ouitoulia:themethla
   - ouitoulia:prosopon
 
-# Information added by GitHub Action packaging script on 2025-02-11
-version: '2.8.0'
+# Information added by GitHub Action packaging script on 2025-02-17
+version: '2.8.1'
 project: 'Prosis'
-datestamp: 1739253045
-message: ' fix ordinamento per peso della tassonomia'
+datestamp: 1739766008
+message: ' fix filtro notizie'
