@@ -1,0 +1,54 @@
+langcode: it
+status: true
+dependencies:
+  config:
+    - views.view.profilo_utente
+  module:
+    - system
+    - user
+    - views
+  theme:
+    - skenografia
+id: skenografia_views_block__profilo_utente_block_2
+theme: skenografia
+region: content
+weight: -31
+provider: null
+plugin: 'views_block:profilo_utente-block_2'
+settings:
+  id: 'views_block:profilo_utente-block_2'
+  label: ''
+  label_display: '0'
+  provider: views
+  context_mapping: {  }
+  views_label: ''
+  items_per_page: none
+visibility:
+  request_path:
+    id: request_path
+    negate: false
+    pages: '/user/*'
+  user_role:
+    id: user_role
+    negate: false
+    context_mapping:
+      user: '@user.current_user_context:current_user'
+    roles:
+      authenticated: authenticated
+      ex_amministrativo: ex_amministrativo
+      ex_collaboratore: ex_collaboratore
+      ex_dirigente: ex_dirigente
+      ex_docente: ex_docente
+      ex_dsga: ex_dsga
+      ex_tecnico: ex_tecnico
+      personale_docente: personale_docente
+      personale_non_docente: personale_non_docente
+      collaboratore: collaboratore
+      direttore_amministrativo_dsga_: direttore_amministrativo_dsga_
+      personale_amministrativo: personale_amministrativo
+      personale_tecnico: personale_tecnico
+      amministrazione_sito: amministrazione_sito
+      amministratore: amministratore
+      capo_redattore: capo_redattore
+      redattore: redattore
+      dirigente_scolastico: dirigente_scolastico

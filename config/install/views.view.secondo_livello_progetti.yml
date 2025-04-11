@@ -78,6 +78,7 @@ display:
         type: full
         options:
           offset: 0
+          pagination_heading_level: h4
           items_per_page: 8
           total_pages: null
           id: 0
@@ -95,7 +96,6 @@ display:
             offset: false
             offset_label: Scostamento
           quantity: 4
-          pagination_heading_level: h4
       exposed_form:
         type: bef
         options:
@@ -113,13 +113,13 @@ display:
               autosubmit: true
               autosubmit_exclude_textfield: false
               autosubmit_textfield_delay: 500
+              autosubmit_textfield_minimum_length: 3
               autosubmit_hide: true
               input_required: false
               allow_secondary: false
               secondary_label: 'Opzioni avanzate'
               secondary_open: false
               reset_button_always_show: false
-              autosubmit_textfield_minimum_length: 3
             filter:
               field_anno_scolastico_target_id:
                 plugin_id: default
@@ -323,12 +323,12 @@ display:
             default_group: All
             default_group_multiple: {  }
             group_items: {  }
-          reduce_duplicates: false
+          reduce_duplicates: true
           vid: tipologia_progetti
           type: select
           hierarchy: false
           limit: true
-          error_message: true
+          error_message: false
       filter_groups:
         operator: AND
         groups:
