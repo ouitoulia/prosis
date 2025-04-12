@@ -14,8 +14,7 @@ dependencies:
   - ouitoulia:themethla
   - ouitoulia:prosopon
 
-# Information added by GitHub Action packaging script on 2025-04-11
-version: '2.9.0'
+# Information added by GitHub Action packaging script on 2025-04-12
+version: '2.9.1'
 project: 'Prosis'
-datestamp: 1744382338
-message: ' aggiunte viste nella pagina del profilo utente con l'elenco dei contenuti pubblicati e in fase di pubblicazione'
+datestamp: 1744473045
