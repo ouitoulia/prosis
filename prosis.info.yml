@@ -14,7 +14,7 @@ dependencies:
   - ouitoulia:themethla
   - ouitoulia:prosopon
 
-# Information added by GitHub Action packaging script on 2026-11-21
-version: '2.10.1'
+# Information added by GitHub Action packaging script on 2026-11-23
+version: '2.10.2'
 project: 'Prosis'
-datestamp: 1795274189
+datestamp: 1795413634
