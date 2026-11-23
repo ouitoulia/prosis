@@ -19,12 +19,12 @@
   "prefer-stable": true,
   "require": {
     "drupal/better_exposed_filters": "^6",
-    "drupal/empty_front_page": ">=1",
+    "drupal/empty_front_page": "^1.2",
     "drupal/core-recommended": "^10.3 || ^11",
-    "drupal/leaflet": ">=10.2",
-    "drupal/menu_block": "^1.11",
+    "drupal/leaflet": "^10.4",
+    "drupal/menu_block": "^1.14",
     "ouitoulia/prosopon": "^4",
-    "ouitoulia/skenografia": ">=2",
-    "ouitoulia/themethla": ">=4"
+    "ouitoulia/skenografia": "^2",
+    "ouitoulia/themethla": "^5"
   }
 }
