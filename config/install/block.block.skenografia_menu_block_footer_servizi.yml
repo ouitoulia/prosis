@@ -21,13 +21,13 @@ settings:
   follow: false
   follow_parent: child
   display_empty: false
-  label_link: false
-  label_type: fixed
   level: 1
   depth: 1
   expand_all_items: false
   parent: 'main:menu_link_content:c459014b-4937-44f3-bb0f-05a942eff503'
   render_parent: false
   suggestion: block_footer_main
+  label_type: fixed
+  label_link: false
   hide_on_nonactive: false
 visibility: {  }

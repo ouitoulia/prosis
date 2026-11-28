@@ -5,11 +5,6 @@ dependencies:
     - core.entity_view_mode.node.card_scuola_big_image
     - node.type.percorso_di_studio
     - taxonomy.vocabulary.indirizzi_di_studio
-  content:
-    - 'taxonomy_term:indirizzi_di_studio:626d1ad1-1477-453e-a100-02150cc7eb09'
-    - 'taxonomy_term:indirizzi_di_studio:b54b101a-2c13-4727-8d5f-60a65c4bb7e5'
-    - 'taxonomy_term:indirizzi_di_studio:f1835c36-a740-4904-a0af-a7a74559fcf5'
-    - 'taxonomy_term:indirizzi_di_studio:fc1802d9-9906-4516-849c-a23580566e39'
   module:
     - better_exposed_filters
     - node
